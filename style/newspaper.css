@@ -305,7 +305,7 @@ section.modalWindow section.modalWrapper {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 83%;
+    height: 90%;
 }
 
 .btnNewsPaper {
