@@ -307,7 +307,7 @@ section.modalWindow section.modalWrapper {
 }
 
 .btnNewsPaper {
-    width: 77%;
+    width: 64%;
     background-color: #93c469;
     padding: 0.8vw 2.4vw;
     border-radius: 50px;
@@ -320,6 +320,10 @@ section.modalWindow section.modalWrapper {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 1.5vw;
+}
+.btnSience
+{
+    width: 77%;
 }
 
 .btnNewsPaper:hover {
