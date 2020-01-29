@@ -86,6 +86,10 @@ footer {
     justify-content: space-between;
 }
 
+.container {
+    background-image: url(../img/bkSience1.png);
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -203,7 +207,7 @@ section {
     margin: 0.63vw 0.42vw;
     cursor: pointer;
     float: left;
-/*    background-image: url(../img/touchImg.png);*/
+    /*    background-image: url(../img/touchImg.png);*/
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -415,6 +419,19 @@ section {
     .main .main_box {
         margin-top: 2.5vw;
     }
+}
+
+@media all and (max-width:1280px) {
+    .main_box .video {
+        width: 57%;
+        height: 20vw;
+    }
+    main_box .video .close {
+    position: absolute;
+    left: 96%;
+    top: 4%;
+    cursor: pointer;
+}
 }
 
 @media all and (max-width:1024px) {
