@@ -2,7 +2,7 @@
     font-family: 'Storyteller';
     src: url("../font/Storyteller.otf") format("opentype");
 }
-header, footer {
+header {
     z-index: 2;
 }
 

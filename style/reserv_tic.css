@@ -110,21 +110,9 @@
 
 @media all and (max-width:1024px) {
     .reserv_tic {
-        width: 29%;
+        width: 37%;
         height: 30%;
         padding: 3.7% 4%;
-    }
-}
-
-@media all and (max-width:768px) {
-    .reserv_tic {
-        width: 39%;
-        height: 28%;
-        padding: 3.7% 7%;
-    }
-
-    .res_tic_btn {
-        height: 30%;
     }
 
     .res_tic_btn a {
@@ -138,6 +126,73 @@
     .shareIcon img {
         width: 3.1vw;
         height: 3.1vw;
+    }
+}
+
+@media all and (max-width:768px) {
+    .reserv_tic {
+        width: 47%;
+        height: 25%;
+        padding: 3.7% 7%;
+    }
+
+    .res_tic_btn {
+        height: 30%;
+    }
+
+    .res_tic_btn a {
+        font-size: 2vw;
+    }
+
+    .shareBox p {
+        font-size: 2.1vw;
+    }
+
+
+
+    .shareIcon img {
+        width: 4.1vw;
+        height: 4.1vw;
+    }
+
+    .shareIcon {
+        width: 53%;
+    }
+
+    .boxClose {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+@media all and (max-width:425px) {
+    .reserv_tic {
+        width: 65%;
+        height: 22%;
+        padding: 8.7% 9%;
+    }
+
+    .res_tic_btn {
+        height: 35%;
+    }
+
+    .res_tic_btn a {
+        font-size: 3vw;
+    }
+
+    .shareBox p {
+        font-size: 3.1vw;
+    }
+
+    .boxClose {
+        width: 3vw;
+        height: 3vw;
+    }
+
+
+    .shareIcon img {
+        width: 6.1vw;
+        height: 6.1vw;
     }
 
     .shareIcon {

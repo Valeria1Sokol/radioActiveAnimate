@@ -17,7 +17,8 @@
     font-family: 'AvenirL';
     src: url("../font/AvenirLTStd-Light_2.otf") format("opentype");
 }
-header, footer {
+
+header{
     z-index: 2;
 }
 
@@ -34,13 +35,13 @@ header, footer {
     left: 0;
 }
 
-.intro  .video {
+.intro .video {
     position: relative;
     z-index: 1;
     padding-bottom: 56.25%;
 }
 
-.intro  .video__media {
+.intro .video__media {
     width: 100%;
     height: auto;
 
@@ -324,7 +325,7 @@ header, footer {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
-    z-index: 2;
+/*    z-index: 2;*/
     position: relative;
     text-decoration: none;
 }
@@ -426,6 +427,13 @@ section > span {
         border-radius: 6vw;
         margin: 2vw 0 0;
     }
+     .intro {
+        display: none;
+    }
+
+    .container {
+        background-image: url(../img/a_rebel_bgn.png);
+    }
 }
 
 @media all and (max-width:768px) {
@@ -440,6 +448,8 @@ section > span {
     .main .video {
         height: 34vw;
     }
+
+   
 }
 
 
