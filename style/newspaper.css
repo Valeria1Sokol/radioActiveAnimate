@@ -2,9 +2,11 @@
     font-family: 'Storyteller';
     src: url("../font/Storyteller.otf") format("opentype");
 }
+
 header {
     z-index: 3;
 }
+
 footer {
     z-index: 2;
 }
@@ -105,11 +107,13 @@ footer {
 .main .modalButton:hover {
     text-decoration: none !important;
 }
+
 .main .modalButton:active p {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
+
 .main .modalButton:checked p {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 .main .poster img {
@@ -813,5 +817,9 @@ fa-chevron-up {
     .modalImg {
         width: 60%;
         height: 52vw;
+    }
+
+    .btnNewsPaper {
+        padding: 1.6vw 2.4vw;
     }
 }

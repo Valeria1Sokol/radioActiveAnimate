@@ -95,7 +95,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 9vw 0 0vw 9.6vw;
+    padding: 7vw 0 0vw 9.6vw;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -129,7 +129,7 @@ footer {
 
 .main_box .video {
     width: 60%;
-    height: 28vw;
+    height: 24vw;
     background-color: #081f20;
     display: flex;
     flex-direction: column;
@@ -306,7 +306,7 @@ section {
     width: 65%;
     padding: 3.3vw 3.75vw 1.83vw;
     position: relative;
-    margin: 12vw 0vw 0vw 9vw;
+    margin: 9vw 0vw 0vw 9vw;
     opacity: 0;
     /*     */
 }

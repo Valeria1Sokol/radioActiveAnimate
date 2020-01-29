@@ -476,7 +476,7 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 2.3vw 0 0;
+/*    padding: 2.3vw 0 0;*/
 }
 
 .header_btn_box .header_btn {
@@ -494,7 +494,7 @@ nav {
     cursor: pointer;
 }
 
-.text_container {
+header .text_container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -506,6 +506,10 @@ nav {
 }
 
 .header_text_p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
     font-size: 1vw;
     color: #76ff00;
     letter-spacing: 3px;
@@ -643,21 +647,33 @@ footer .footerIcon_loc {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 1.5vw 8.6vw;
+        padding: 1.6vw 8.7vw;
     }
 }
 
 @media all and (max-width:1600px) {
     .fotter_cont_box {
-        padding: 0 4% 0 21%;
+        padding: 0 4% 0 16%;
     }
+    .header_center {
+    padding: 1.7vw 8.7vw;
+}
 }
 
 @media all and (max-width:1440px) {
     .menuList .tittle_p {
         width: 89%;
     }
+    .header_center {
+    padding: 1.9vw 8.7vw;
+}
 
+}
+@media all and (max-width:1280px)
+{
+    .header_center {
+    padding: 2vw 8.7vw;
+}
 }
 
 @media all and (max-width:1024px) {
@@ -665,7 +681,7 @@ footer .footerIcon_loc {
         padding: 0 5.1vw;
     }
 
-    .text_container,
+    header .text_container,
     .fotter_cont_box {
         display: none;
     }
@@ -718,7 +734,7 @@ footer .footerIcon_loc {
     }
 
     .header_center {
-        padding: 3.5vw 17.6vw;
+        padding: 3.6vw 17.6vw;
     }
 
     .header_btn_box .header_btn {
@@ -836,6 +852,9 @@ footer .footerIcon_loc {
 }
 
 @media all and (max-width:768px) {
+    .header_center {
+    padding: 3.5vw 17.6vw 4.5vw;
+}
 
 
     #menuToggle .menuCheck {
@@ -921,7 +940,7 @@ footer .footerIcon_loc {
     }
 
     .header_center {
-        padding: 2.8vw 17.6vw 3.5vw;
+        padding: 4vw 17.6vw 6vw;
     }
 
     .header_btn_box .header_btn {
