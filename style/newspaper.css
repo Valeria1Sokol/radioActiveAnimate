@@ -195,11 +195,13 @@ section.modalWindow section.modalWrapper {
 }
 
 .modalImg {
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 29vw;
-    height: 40vw;
     transition: all 2s;
+}
+.modalImg img
+{
+    width: 100%;
+    display: none;
 }
 
 .modal ul {
@@ -508,14 +510,10 @@ fa-chevron-up {
 @media all and (max-width:1440px) {
     .main .poster {
         width: 15vw;
-        height: 21vw;
     }
 
     .modalImg {
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 24vw;
-        height: 34vw;
         transition: all 2s;
     }
 
@@ -527,7 +525,6 @@ fa-chevron-up {
 @media all and (max-width:1024px) {
     .main .poster {
         width: 19vw;
-        height: 21vw;
     }
 
     .modalWripperImg {
@@ -535,11 +532,15 @@ fa-chevron-up {
     }
 
     .modalImg {
+        background-image: none;
         background-repeat: no-repeat;
         background-size: cover;
         width: 28vw;
-        height: 38vw;
         transition: all 2s;
+    }
+    .modalImg img
+    {
+        max-width: 100%;
     }
 
     .intro {
@@ -814,6 +815,16 @@ fa-chevron-up {
     .pull-right {
         width: 3vw;
     }
+    .btnSience {
+    width: 49%;
+}
+    .btnImpact {
+    width: 53%;
+}
+    .btnRebel
+    {
+        width: 53%;
+    }
 
 }
 
@@ -824,21 +835,12 @@ fa-chevron-up {
     }
 
     .modalImg {
-        width: 119px;
-        height: 52vw;
+        width: 140px;
     }
 
     .reserv_tic {
         border-radius: 7.6vw;
     }
-
-    /*
-    .modalImg {
-width: 40%;
-height: 76%;
-}
-*/
-
     .btnNewsPaper {
         padding: 1.6vw 2.4vw;
     }
