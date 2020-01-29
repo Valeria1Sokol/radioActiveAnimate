@@ -3,6 +3,9 @@
     src: url("../font/Storyteller.otf") format("opentype");
 }
 header {
+    z-index: 3;
+}
+footer {
     z-index: 2;
 }
 

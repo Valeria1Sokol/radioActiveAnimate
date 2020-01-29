@@ -69,11 +69,16 @@
     left: 0;
 }
 
-header,
-footer {
+header {
 
     position: fixed;
     z-index: 8;
+}
+
+footer {
+
+    position: fixed;
+    z-index: 7;
 }
 
 #menu,

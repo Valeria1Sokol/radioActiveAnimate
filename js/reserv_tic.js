@@ -1,4 +1,4 @@
-       $('.header_center').click(function () {
+       $('.share').click(function () {
            $(".modal2").css({
                display: 'flex'
            });

@@ -19,6 +19,9 @@
 }
 
 header{
+    z-index: 3;
+}
+footer{
     z-index: 2;
 }
 
@@ -388,6 +391,9 @@ section > span {
 
 
 @media all and (max-width:1024px) {
+    footer{
+    z-index: 0;
+}
 
     .main .main_box {
         flex-direction: column-reverse;
