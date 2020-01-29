@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'SackersM';
+    src: url("../SackersGothicStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Storyteller';
+    src: url("../font/Storyteller.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'AvenirM';
+    src: url("../font/Avenir-LT-65-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'AvenirL';
+    src: url("../font/AvenirLTStd-Light_2.otf") format("opentype");
+}
+header, footer {
+    z-index: 2;
+}
+
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
+    left: 0;
+}
+
+.intro  .video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.intro  .video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.container {
+    background-position: center;
+    background-image: none;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0vw 0 0vw 3.6vw;
+}
+
+.main .main_h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'SackersM';
+    letter-spacing: 0.2vw;
+    padding-left: 3.7vw;
+    line-height: 2;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+.main .main_tittle {
+    color: white;
+    font-size: 0.75vw;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-left: 3.7vw;
+    position: relative;
+}
+
+.main .btn_more {
+    text-decoration: none;
+    position: relative;
+}
+
+.main .btn_more p:hover {
+    -webkit-box-shadow: 0 0 10px #93c469;
+    -moz-box-shadow: 0 0 10px #93c469;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
+.main .btn_more p {
+    background-color: #93c469;
+    color: #081f20 !important;
+    font-size: 0.47vw;
+    font-family: 'AvenirM';
+    font-weight: 800;
+    padding: 0.6vw 1.4vw;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    margin: 0 2.1vw 0 0;
+    cursor: pointer;
+    line-height: 1.5;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.main .main_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5.5vw;
+}
+
+.main .main_box .video {
+    width: 50%;
+    height: 25vw;
+    background-color: #081f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.main .video .play {
+    border-radius: 50%;
+    background-color: #74bd8a;
+    width: 5.5vw;
+    height: 5.5vw;
+    background-image: url(../img/main-play-button.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 58%;
+    border: none;
+    cursor: pointer;
+}
+
+.main .video .close {
+    position: absolute;
+    left: 97%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100%;
+}
+
+.marie_pierre_box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 55%;
+    height: 100%;
+    position: relative;
+    left: 7.6vw;
+
+}
+
+.marie_pierre_box .marie {
+    position: absolute;
+    z-index: 3;
+    width: 30.4vw;
+    height: 90%;
+    background-image: url(../img/marie.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 0 0 9vw;
+    transition: all 1s;
+}
+
+
+.marie_pierre_box .pierre {
+    position: absolute;
+    z-index: 3;
+    width: 23vw;
+    height: 106%;
+    left: 54%;
+    background-image: url(../img/pierre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw 5vw 0 0;
+    transition: all 1s;
+}
+
+.info {
+    display: flex;
+    height: 40vw;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info .main_h1 {
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'SackersM';
+    letter-spacing: 0.2vw;
+    line-height: 2;
+    padding: 0 0 0 2vw;
+}
+
+.info .about_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #00393a;
+    padding: 3.1vw 2.4vw 3.1vw 11.5vw;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+}
+
+.about_Maria {
+    width: 73%;
+    height: 90px;
+    background-image: url(../img/MSC.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about_box_m .about_Maria {
+    width: 79%;
+    height: 6vw;
+    background-image: url(../img/MSC.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about_tittle {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    margin: 1vw 0;
+}
+
+.about_Pierre {
+    width: 76%;
+    height: 4.5vw;
+    margin: 0;
+    background-image: url(../img/PC.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about_p {
+    color: white;
+    font-size: 0.85vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    margin: 2vw 0 0;
+}
+
+.marie_pierre_box .touch_p {
+    font-size: 0.6vw;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    line-height: 3.5;
+    letter-spacing: 0.2vw;
+    opacity: 0.8;
+}
+
+.marie_pierre_box .touch {
+    width: 4.5vw;
+}
+
+
+.about_p2 {
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin: 0 0 2.5vw;
+}
+
+.header_btn {
+    color: #93c469;
+    border: 1px solid #93c469;
+    font-size: 0.73vw;
+    background-color: transparent;
+    border-radius: 1.3vw;
+    padding: 0.73vw 1.8vw;
+    font-family: 'Avenir';
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+}
+
+.header_btn:hover {
+    background-color: #93c469;
+    color: #081f20 !important;
+    -webkit-box-shadow: 0 0 10px #93c469;
+    -moz-box-shadow: 0 0 10px #93c469;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
+section > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media all and (max-width:1920px) {
+    .main .main_h1 {
+        letter-spacing: 0.3vw;
+        padding-left: 5.7vw;
+        font-size: 1.72vw;
+    }
+
+    .main .main_tittle {
+        font-size: 0.95vw;
+        padding-left: 5.7vw;
+    }
+
+    .main .main_box .video {
+        width: 60%;
+        height: 28vw;
+    }
+
+    .main .btn_more p {
+        font-size: 0.53vw;
+        font-family: 'AvenirM';
+        padding: 0.8vw 1.4vw;
+        letter-spacing: 0.2vw;
+        margin: 0 2.1vw 0 0;
+    }
+
+    .info .main_h1 {
+        color: white;
+        font-size: 1.78vw;
+        font-family: 'SackersM';
+        letter-spacing: 0.5vw;
+        line-height: 2;
+        padding: 0 0 0 2vw;
+    }
+
+}
+
+
+@media all and (max-width:1024px) {
+
+    .main .main_box {
+        flex-direction: column-reverse;
+        margin-top: 2.5vw;
+    }
+
+    .main .main_h1 {
+        padding: 0 22.7vw;
+        line-height: 1.5;
+        font-size: 3.7vw;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'SackersM';
+        letter-spacing: 0.5vw;
+    }
+
+    .main .main_tittle {
+        display: none;
+    }
+
+    .main {
+        padding: 0vw 5.1vw;
+    }
+
+    .main .video {
+        width: 100%;
+    }
+
+    .main .video .close {
+        display: none;
+    }
+
+    .main .btn_more p {
+        font-size: 2vw;
+        padding: 1.5vw 5.8vw;
+        border-radius: 6vw;
+        margin: 2vw 0 0;
+    }
+}
+
+@media all and (max-width:768px) {
+    .main .main_box {
+        margin-top: 9.5vw;
+    }
+
+    .main .btn_more p {
+        margin: 5vw 0 0;
+    }
+
+    .main .video {
+        height: 34vw;
+    }
+}
+
+
+@media all and (max-width:425px) {
+
+    .main .main_h1,
+    .main2 .main_h1 {
+        padding: 0 9.7vw;
+        line-height: 1.5;
+        font-size: 6.7vw;
+    }
+
+    .main .video {
+        height: 41vw;
+    }
+
+    .main .btn_more p {
+        font-size: 3vw;
+        padding: 2.5vw 8.8vw;
+        border-radius: 9vw;
+        margin: 9vw 0 0;
+    }
+
+    .main .main_box {
+        margin-top: 16.5vw;
+    }
+}

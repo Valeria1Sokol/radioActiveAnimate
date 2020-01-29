@@ -1,0 +1,814 @@
+@font-face {
+    font-family: 'Storyteller';
+    src: url("../font/Storyteller.otf") format("opentype");
+}
+header, footer {
+    z-index: 2;
+}
+
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
+    left: 0;
+}
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* width */
+.modal .info p::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+/* Track */
+.modal .info p::-webkit-scrollbar-track {
+
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    background: rgb(147, 196, 105, 0.4);
+}
+
+/* Handle */
+.modal .info p::-webkit-scrollbar-thumb {
+    background: rgb(147, 196, 105, 0.8);
+    border-radius: 10px;
+    width: 5px;
+}
+
+
+.container {
+    /*    background-image: url(../img/newspaper-sceneBg.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.container::before {
+    display: none;
+}
+
+.carousel {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main .poster {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    width: 15vw;
+    height: 19vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 2.5vw;
+    font-size: 0.6vw;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.main .modalButton:hover {
+    text-decoration: none !important;
+}
+.main .modalButton:active p {
+    text-decoration: none!important;
+}
+.main .modalButton:checked p {
+    text-decoration: none!important;
+}
+
+.main .poster img {
+    margin: 1vw 0 0;
+    width: 3vw;
+}
+
+.main .posterL {
+    margin: 1vw -0.6vw 0 0vw;
+    padding: 0 0 2.5vw 2vw;
+}
+
+.main .posterC {
+    width: 13.6vw;
+    height: 19vw;
+    margin-top: 6vw;
+}
+
+.main .posterR {
+    margin: 1vw 0vw 0 -0.6vw;
+    padding: 0 0 4vw 2vw;
+}
+
+
+section.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+section.modalWindow {
+    display: none;
+    position: fixed;
+    left: 13%;
+    top: 4%;
+    z-index: 999 !important;
+    width: 80%;
+    height: 99%;
+    background: transparent;
+    cursor: default;
+}
+
+section.modal.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+    cursor: pointer;
+}
+
+section.modalWindow section.modalWrapper {
+    padding: 1vw;
+    text-align: left;
+    height: 100%;
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    cursor: pointer;
+    color: #93c469;
+    font-size: 1.3vw;
+}
+
+.closeBtn img {
+    width: 1vw;
+}
+
+.modalImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 29vw;
+    height: 40vw;
+    transition: all 2s;
+}
+
+.modal ul {
+    list-style: none;
+    min-height: 15vw;
+}
+
+.modal .info {
+    /*    display: none;*/
+    background-color: #0b3a3a;
+    width: 33vw;
+    height: 32.2vw;
+    flex-direction: column;
+    padding: 3vw 3vw 3vw;
+    border-radius: 0 0 2.7vw 2.7vw;
+}
+
+.modalInfo {
+    overflow: auto;
+    height: 100%;
+    border-radius: 1.7vw;
+    border-radius: 1.7vw;
+}
+
+.modal .info p {
+    font-size: 0.9vw;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    line-height: 1.6;
+    overflow: auto;
+    height: 100%;
+    padding: 0 1vw 0 0;
+}
+
+.modal .active {
+    display: block;
+}
+
+.modal .infoHeader {
+    width: 33vw;
+    height: 6vw;
+    background-color: #0b3a3a;
+    border-radius: 1.7vw;
+    margin: 0 0 -2.5vw;
+    box-shadow: 0px -3px 30px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1vw 3vw 0vw;
+    transition: all 0.4s;
+}
+
+
+.modal .h1 {
+    font-size: 1.3vw;
+    color: #93c469;
+    font-weight: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    padding: 0 3vw 0vw;
+    transition: all 0.4s;
+    line-height: 1.5;
+    font-family: 'Storyteller';
+}
+
+.modal .headerIngredient {
+    color: #6d9b5a;
+    font-size: 0.6vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+}
+
+.modal .infoC .info {
+    height: 27vw;
+}
+
+.modal .infoR .info {
+    height: 18vw;
+}
+
+.modal .arrow {
+    width: 1.4vw;
+}
+
+.news_tittle {
+    display: none;
+}
+
+.mob_poster {
+    display: flex;
+}
+
+.modalWripperImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 83%;
+}
+
+.btnNewsPaper {
+    width: 77%;
+    background-color: #93c469;
+    padding: 0.8vw 2.4vw;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1.5vw;
+}
+
+.btnNewsPaper:hover {
+    -webkit-box-shadow: 0 0 10px #93c469;
+    -moz-box-shadow: 0 0 10px #93c469;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
+.btnNewsPaper a {
+    text-decoration: none;
+    color: #081f20;
+    font-size: 0.8vw;
+    font-family: 'AvenirM';
+    font-weight: 800;
+    text-align: left;
+
+}
+
+.btnNewsPaper .btnIcon {
+    width: 1.8vw;
+    margin: 0 1vw 0 0;
+}
+
+.btnRebel,
+.btnImpact,
+.btnSience {
+    display: none;
+}
+
+.btnImpact {
+    width: 64%;
+}
+
+
+/*modal*/
+
+
+#accordion .panel-heading a.collapsed:hover,
+#accordion .panel-heading a.collapsed:focus {
+
+    transition: all 0.2s ease-in;
+}
+
+#accordion .panel-heading a.collapsed:hover::before,
+#accordion .panel-heading a.collapsed:focus::before {
+    color: white;
+}
+
+#accordion .panel-heading:not(.collapsed) .panel-title {
+
+    font-size: 1.3vw;
+    color: #93c469;
+    font-weight: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    transition: all 0.4s;
+    line-height: 1.5;
+    font-family: 'Storyteller';
+    text-decoration: none;
+}
+
+#accordion .panel-heading a {
+
+    transition: all 0.2s ease-in;
+    color: #6d9b5a;
+    font-size: 0.6vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.i-accordion .panel-heading,
+.d-accordion .panel-heading,
+.accordion-2a .panel-heading,
+.accordion-2b .panel-heading,
+.accordion-3 .panel-heading {
+    cursor: pointer;
+}
+
+.d-accordion .panel-heading.collapsed .fa-chevron-up:before {
+    content: '\f078';
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.4vw;
+}
+
+.panel-heading:not(.collapsed) .pull-right {
+    background-image: none;
+}
+
+.panel-heading:not(.collapsed) .panel-title {
+    font-size: 1.3vw;
+    color: #93c469;
+    font-weight: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    transition: all .6s;
+    line-height: 1.5;
+    font-family: 'Storyteller';
+    text-decoration: none;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: none;
+}
+
+/* Add Indicator fontawesome icon to the left */
+#accordion .panel-heading .accordion-toggle .arrow {
+    display: none;
+}
+
+.pull-right {
+    float: right !important;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.4vw;
+    background-image: url(../img/arrow_down.png);
+
+}
+
+.fa-chevron-down:before {
+    display: flex;
+    content: '\f078';
+
+}
+
+fa-chevron-up {
+    display: none;
+}
+
+#accordion .panel-heading .accordion-toggle.collapsed .arrow {
+    display: flex;
+
+    /*    here*/
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0px;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.panel {
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 0px rgba(0, 0, 0, .05);
+}
+
+.panel-title {
+    transition: all 0.2s ease-in;
+    color: #6d9b5a;
+    font-size: 0.6vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media all and (max-width:1440px) {
+    .main .poster {
+        width: 15vw;
+        height: 21vw;
+    }
+
+    .modalImg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 24vw;
+        height: 34vw;
+        transition: all 2s;
+    }
+
+    .modalWripperImg {
+        height: 100%;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .main .poster {
+        width: 19vw;
+        height: 21vw;
+    }
+
+    .modalWripperImg {
+        height: 65%;
+    }
+
+    .modalImg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 28vw;
+        height: 38vw;
+        transition: all 2s;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .container {
+        background-image: url(../img/newspaper-sceneBg.png);
+    }
+}
+
+@media all and (max-width:768px) {
+    .mob_poster {
+        display: none;
+    }
+
+    .intro {
+        display: none;
+    }
+
+    .modalWripperImg {
+        height: 71%;
+    }
+
+    .modal .info p::-webkit-scrollbar {
+        width: 2px;
+
+    }
+
+    section.modalWindow section.modalWrapper {
+        flex-direction: column;
+    }
+
+    .btnNewsPaper .btnIcon {
+        width: 4.3vw;
+        margin: 0 2vw 0 0;
+    }
+
+    .btnNewsPaper a {
+        font-size: 2vw;
+    }
+
+    .carousel {
+        position: absolute;
+        width: 90%;
+        height: 70vh;
+        perspective: 600px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .carousel .carousel-item {
+        visibility: hidden;
+        width: 200px;
+        height: 64.5vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .carousel-item {
+        width: 45.8vw !important;
+    }
+
+    .carousel .indicators .indicator-item {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: #92c66a;
+        opacity: 0.4;
+        margin: 0 1vw 0 0;
+    }
+
+    .carousel .indicators {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul:not(.browser-default) {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    .carousel .indicators .indicator-item.active {
+        opacity: 1;
+        background-color: #92c66a;
+    }
+
+
+    .modalImg {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 44%;
+        transition: all 2s;
+    }
+
+    .btnImpact {
+        margin: 0 0 2vw;
+    }
+
+    .modalWripperImg {
+        height: 41%;
+        margin: 0 0 2vw;
+    }
+
+    .main .posterR,
+    .main .posterC,
+    .main .posterL {
+        margin: 0
+    }
+
+    section.modalWindow {
+        top: 1%;
+        height: 99%;
+    }
+
+    .modal ul {
+        width: 100%;
+    }
+
+    .modal .infoHeader {
+        width: 100%;
+        height: 10vw;
+        background-color: #0b3a3a;
+        border-radius: 4.2vw 4.4vw 0 0;
+        padding: 2vw 6vw 0 8vw;
+        color: #6d9b5a;
+        font-size: 2vw;
+        font-weight: 100;
+        letter-spacing: 0.3vw;
+        text-align: center;
+    }
+
+    .modalInfo {
+        height: 97%;
+        width: 100%;
+        padding: 0 0 13vw;
+        border-radius: 4.2vw;
+    }
+
+    .modal .arrow {
+        width: 2.4vw;
+    }
+
+    .modal .info {
+        background-color: #0b3a3a;
+        width: 100%;
+        height: 55vw;
+        flex-direction: column;
+        padding: 4vw 8vw 5vw;
+        border-radius: 0 0 4.2vw 4.2vw;
+    }
+
+    .modal .info p {
+        font-size: 1.9vw;
+        /*        margin: 2vw 0 0;*/
+        letter-spacing: 0.3vw;
+    }
+
+    section.modalWindow section.modalWrapper {
+        align-items: center !important;
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .modal .infoC .info {
+        height: 48vw;
+    }
+
+    .closeBtn {
+        position: absolute;
+        right: 8%;
+        top: 0;
+        cursor: pointer;
+        color: #93c469;
+        font-size: 1.3vw;
+    }
+
+    .closeBtn img {
+        width: 3vw;
+    }
+
+    .modal .h1 {
+        padding: 0 6vw 5.9vw 8vw;
+        color: #6d9b5a;
+        font-size: 3.2vw;
+        font-weight: 100;
+        letter-spacing: 0.3vw;
+        text-align: center;
+    }
+
+    .modal .infoR .info {
+        height: 35vw;
+    }
+
+    .main .posterC {
+        background-image: url(../img/poster1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main .posterR {
+        background-image: url(../img/poster2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main .posterL {
+        background-image: url(../img/poster3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        background-image: url(../img/newspaper-sceneBg_m.png);
+    }
+
+    .news_tittle {
+        display: flex;
+        width: 53%;
+        font-size: 2.2vw;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 0.5vw;
+        line-height: 2;
+        text-align: center;
+    }
+
+
+    .main {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12vw 0 0;
+    }
+
+    .panel-heading:not(.collapsed) .panel-title {
+        width: 100%;
+        color: #6d9b5a;
+        font-size: 3vw;
+        font-weight: 100;
+        letter-spacing: 0.3vw;
+        text-align: left;
+    }
+
+    .panel-title {
+        color: #6d9b5a;
+        font-size: 2.3vw;
+        font-weight: 300;
+        letter-spacing: 0.3vw;
+        text-align: left;
+        border-radius: 4.7vw;
+    }
+
+    .panel-group {
+        margin-bottom: 0;
+        border-radius: 4.2vw;
+    }
+
+    .fa.pull-right {
+        margin-left: 0;
+    }
+
+    .pull-right {
+        width: 3vw;
+    }
+
+}
+
+@media all and (max-width:425px) {
+    .modalImg {
+        width: 60%;
+        height: 52vw;
+    }
+}
