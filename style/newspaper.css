@@ -814,12 +814,32 @@ fa-chevron-up {
 }
 
 @media all and (max-width:425px) {
+ 
+    .btnNewsPaper a {
+    font-size: 1.7vw;
+}
     .modalImg {
-        width: 60%;
+       width: 119px;
         height: 52vw;
     }
+/*
+    .modalImg {
+width: 40%;
+height: 76%;
+}
+*/
 
     .btnNewsPaper {
         padding: 1.6vw 2.4vw;
+    }
+    .btnNewsPaper {
+    width: 70%;
+}
+       .btnImpact {
+    width: 62%;
+}
+    .btnSience
+    {
+        width: 80%;
     }
 }

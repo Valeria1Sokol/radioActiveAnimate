@@ -476,7 +476,7 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-/*    padding: 2.3vw 0 0;*/
+    /*    padding: 2.3vw 0 0;*/
 }
 
 .header_btn_box .header_btn {
@@ -537,7 +537,7 @@ footer .footerIcon_loc {
 
 .fotterTittle {
     font-size: 0.58vw;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #888787;
     font-family: 'SackersM'
 }
@@ -546,13 +546,17 @@ footer .footerIcon_loc {
     width: 100%;
 }
 
+.footerIcon {
+    width: 30%;
+}
+
 .fotter_cont_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 96%;
-    padding: 0 4% 0 29%;
+    padding: 0 4% 0 23%;
 }
 
 .mobile {
@@ -656,25 +660,27 @@ footer .footerIcon_loc {
     .fotter_cont_box {
         padding: 0 4% 0 16%;
     }
+
     .header_center {
-    padding: 1.7vw 8.7vw;
-}
+        padding: 1.7vw 8.7vw;
+    }
 }
 
 @media all and (max-width:1440px) {
     .menuList .tittle_p {
         width: 89%;
     }
+
     .header_center {
-    padding: 1.9vw 8.7vw;
-}
+        padding: 1.9vw 8.7vw;
+    }
 
 }
-@media all and (max-width:1280px)
-{
+
+@media all and (max-width:1280px) {
     .header_center {
-    padding: 2vw 8.7vw;
-}
+        padding: 2vw 8.7vw;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -854,8 +860,8 @@ footer .footerIcon_loc {
 
 @media all and (max-width:768px) {
     .header_center {
-    padding: 3.5vw 17.6vw 4.5vw;
-}
+        padding: 3.5vw 17.6vw 4.5vw;
+    }
 
 
     #menuToggle .menuCheck {
