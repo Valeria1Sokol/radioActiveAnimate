@@ -203,7 +203,7 @@ section {
     margin: 0.63vw 0.42vw;
     cursor: pointer;
     float: left;
-    background-image: url(../img/touchImg.png);
+/*    background-image: url(../img/touchImg.png);*/
     background-repeat: no-repeat;
     background-size: contain;
 }

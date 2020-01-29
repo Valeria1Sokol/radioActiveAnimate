@@ -14,7 +14,13 @@ if (widthW >= '1024') {
             }, 1000);
              $('.about_box_p').animate({
                 opacity: 0,
-            }, 1000);
+            }, 100);
+             $('.about_box_m').css({
+                 zIndex:3
+            });
+             $('.about_box_p').css({
+                 zIndex:0
+            });
         });
 
         openB.find(".pierre").click(function () {
@@ -23,7 +29,13 @@ if (widthW >= '1024') {
             }, 1000);
               $('.about_box_m').animate({
                 opacity: 0,
-            }, 1000);
+            }, 100);
+              $('.about_box_p').css({
+                 zIndex:3
+            });
+             $('.about_box_m').css({
+                 zIndex:0
+            });
 
         });
 
@@ -38,8 +50,7 @@ if (widthW <= '1023') {
         openB.find(".marie").click(function () {
 
             $('.about_box_m').animate({
-                opacity: 1,
-                 zIndex:2
+                opacity: 1
             }, 1000);
              $('.about_box_m').css({
                  zIndex:2
