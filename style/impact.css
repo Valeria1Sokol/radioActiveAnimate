@@ -86,7 +86,9 @@ footer {
     justify-content: space-between;
 }
 
-
+.container {
+    background-image: url(../img/bg_impact.png);
+}
 
 .main {
     display: flex;
