@@ -86,9 +86,7 @@ footer {
     justify-content: space-between;
 }
 
-.container {
-    background-image: url(../img/bkSience1.png);
-}
+
 
 .main {
     display: flex;
