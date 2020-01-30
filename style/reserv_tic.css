@@ -170,6 +170,7 @@
         width: 65%;
         height: 27%;
         padding: 8.7% 9%;
+        border-radius: 6.5vw;
     }
 
     .res_tic_btn {
@@ -187,7 +188,8 @@
     .boxClose {
         width: 3vw;
         height: 3vw;
-        right: 3vw;
+        right: 4vw;
+        top: 2vw;
     }
 
 

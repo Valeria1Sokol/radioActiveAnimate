@@ -866,4 +866,10 @@ fa-chevron-up {
     .btnSience {
         width: 80%;
     }
+    .modalInfo {
+    height: 54%;
+    width: 100%;
+    padding: 0 0 13vw;
+    border-radius: 4.2vw;
+}
 }

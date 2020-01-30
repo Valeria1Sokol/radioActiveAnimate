@@ -2,9 +2,11 @@
     font-family: 'SackersM';
     src: url("../SackersGothicStd-Medium.otf") format("opentype");
 }
+
 .container {
     background-image: url(../img/bkSience1.png);
 }
+
 .text_container {
     height: auto;
 }
@@ -21,9 +23,6 @@
     position: relative;
     z-index: 5;
 }
-
-
-
 
 .intro1 {
     opacity: 1;
@@ -98,7 +97,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 7vw 0 0vw 9.6vw;
+    padding: 7vw 0 7vw 9.6vw;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -126,12 +125,12 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 4.5vw;
+    margin-top: 3vw;
     padding-left: 10vw;
 }
 
 .main_box .video {
-   width: 53.34vw;
+    width: 53.34vw;
     height: 30vw;
     background-color: #081f20;
     display: flex;
@@ -158,7 +157,7 @@ footer {
 
 .video .close {
     position: absolute;
-   left: 95%;
+    left: 95%;
     top: 4%;
     cursor: pointer;
 }
@@ -200,27 +199,52 @@ section {
 }
 
 .dot {
-    height: 1.4vw;
-    width: 1.4vw;
+    height: 1.8vw;
+    width: 1.8vw;
     position: relative;
     background-color: transparent;
     margin: 0.63vw 0.42vw;
     cursor: pointer;
     float: left;
-/*    background-image: url(../img/touchImg.png);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*    background-image: url(../img/touchImg.png);*/
     background-repeat: no-repeat;
     background-size: contain;
-     -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
 .dot:first-of-type {
-    background-image: url(../img/play-button-outline.png);
+/*    background-image: url(../img/play-button-outline.png);*/
     transform: matrix3d(2.1, 0.00366519, 0, 0, -0.00366519, 2.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    width: 1.4vw;
-    height: 1.4vw;
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+.dot img
+{
+    position: absolute;
+    max-width: 100%;
+}
+.circle1
+{
+     animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+.circle2
+{
+     animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
 }
 
 .dots_box {
@@ -244,7 +268,7 @@ section {
     color: #92c268;
     font-size: 0.63vw;
     text-transform: uppercase;
-       padding: 1vw 2vw 6vw 0;
+    padding: 1vw 2vw 6vw 0;
     letter-spacing: 0.2vw;
     line-height: 1.6;
 }
@@ -449,16 +473,17 @@ section {
         padding-left: 5.7vw;
     }
 }
+
 @media all and (max-width:1600px) {
     .main_box .video .close {
         left: 96%;
     }
 }
-@media all and (max-width:1440px)
-{
+
+@media all and (max-width:1440px) {
     .contant_box_bottom {
-    margin: 2vw 0vw 1vw 9vw;
-}
+        margin: 2vw 0vw 1vw 9vw;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -564,7 +589,7 @@ section {
     .dots {
         height: 52vh;
         padding: 0 0 8vw;
-        background-size: 5% 88.5%;
+        background-size: 5% 86.5%;
         display: flex;
         align-items: center;
     }
@@ -584,14 +609,14 @@ section {
     }
 
     .dot:first-of-type {
-        width: 2.45vw;
-        height: 2.45vw;
+        width: 4.45vw;
+        height: 4.45vw;
         transform: scale(2);
     }
 
     .dot {
-        width: 2vw;
-        height: 2vw;
+        width: 4vw;
+        height: 4vw;
         cursor: pointer;
     }
 
@@ -779,7 +804,7 @@ section {
     .dots {
         height: 68vw;
         padding: 0 0 11vw;
-        background-size: 8% 91.5%;
+        background-size: 8% 90.5%;
     }
 
     .dot:nth-child(2) {
@@ -789,9 +814,10 @@ section {
     .dots_text p:nth-child(2) {
         margin: 11vw 0 0;
     }
-     .dots_text p:nth-child(5) {
-         position: relative;
-         top: 1vw;
+
+    .dots_text p:nth-child(5) {
+        position: relative;
+        top: 1vw;
     }
 
     .dots_box .dots_text {
@@ -801,15 +827,17 @@ section {
     }
 
     .dot:first-of-type {
-        width: 3.4vw;
-        height: 3.4vw;
+            width: 4vw;
+    height: 4vw;
     }
 
     .dot {
-        width: 3.36vw;
-        height: 3.36vw;
+           width: 4vw;
+    height: 4vw;
         cursor: pointer;
+/*        opacity: 0.4;*/
     }
+    
 
     /*    modal*/
 
@@ -909,6 +937,8 @@ section {
     .header_btn_box_m {
         height: 11vw;
     }
+
+    .closeBtn img {
+        width: 4vw;
+    }
 }
-
-

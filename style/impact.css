@@ -95,7 +95,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 7vw 5.6vw 0;
+    padding: 7vw 5.6vw;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -198,25 +198,53 @@ section {
 }
 
 .dot {
-    width: 1.35vw;
-    height: 1.36vw;
+    height: 1.8vw;
+    width: 1.8vw;
     position: relative;
     background-color: transparent;
     margin: 0.63vw 0.42vw;
     cursor: pointer;
     float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     /*    background-image: url(../img/touchImg.png);*/
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .dot:first-of-type {
-    background-image: url(../img/play-button-outline.png);
+/*    background-image: url(../img/play-button-outline.png);*/
     transform: matrix3d(2.1, 0.00366519, 0, 0, -0.00366519, 2.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    width: 1.4vw;
-    height: 1.4vw;
+    width: 1.8vw;
+    height: 1.8vw;
 }
 
+.dot img
+{
+    position: absolute;
+    max-width: 100%;
+}
+.circle1
+{
+     animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+.circle2
+{
+     animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
 .dots_box {
     width: 50%;
     display: flex;
@@ -226,7 +254,7 @@ section {
     position: absolute;
     z-index: 4;
     left: 26%;
-    bottom: 6%;
+    bottom: 4%;
 }
 
 .dots_box .dots_text {
@@ -238,7 +266,7 @@ section {
     color: #92c268;
     font-size: 0.63vw;
     text-transform: uppercase;
-    padding: 0vw 6vw 1vw 3vw;
+    padding: 0vw 6vw 0vw 3vw;
     letter-spacing: 0.2vw;
 }
 
@@ -412,12 +440,19 @@ section {
     .main .main_box {
         margin-top: 2.5vw;
     }
+
+    .main_box .video {
+        width: 48vw;
+        height: 27vw;
+    }
 }
 
 @media all and (max-width:1280px) {
     .main_box .video {
+        /*
         width: 57%;
         height: 20vw;
+*/
     }
 
     main_box .video .close {
@@ -553,14 +588,14 @@ section {
     }
 
     .dot:first-of-type {
-        width: 2.45vw;
-        height: 2.45vw;
+           width: 4vw;
+    height: 4vw;
         transform: scale(2);
     }
 
     .dot {
-        width: 2vw;
-        height: 2vw;
+            width: 4vw;
+    height: 4vw;
         cursor: pointer;
     }
 
@@ -734,8 +769,8 @@ section {
     }
 
     .dot {
-        width: 3.36vw;
-        height: 3.36vw;
+        width: 4vw;
+        height: 4vw;
         position: relative;
         background-color: transparent;
         margin: 0.63vw 0.42vw;
@@ -763,8 +798,8 @@ section {
     .dot:first-of-type {
         background-image: url(../img/play-button-outline.png);
         transform: matrix3d(2.1, 0.00366519, 0, 0, -0.00366519, 2.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        width: 3.4vw;
-        height: 3.4vw;
+        width: 4vw;
+        height: 4vw;
     }
 
     .dots_box {
@@ -802,7 +837,7 @@ section {
         background-repeat: no-repeat;
         height: 70vw;
         padding: 0 0 13vw;
-        background-size: 4% 91.5%;
+        background-size: 4% 90.5%;
 
 
     }
@@ -906,4 +941,7 @@ section {
     .header_btn_box_m {
         height: 11vw;
     }
+    .closeBtn img {
+    width: 4vw;
+}
 }

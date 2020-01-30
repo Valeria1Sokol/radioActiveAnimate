@@ -16,9 +16,9 @@
         $('.contant_box3').removeClass('fade1');
         $('.contant_box2').removeClass('fade1');
         
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
+        $('#dot2d').removeClass('pulse2');
+        $('#dot3d').removeClass('pulse2');
 
     })
     $('#dot1d').click(function () {
@@ -40,8 +40,8 @@
         $('.contant_box2').removeClass('fade1');
           
         $('#dot1d').addClass('pulse2');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
+        $('#dot2d').removeClass('pulse2');
+        $('#dot3d').removeClass('pulse2');
     })
     $('#dot2d').click(function () {
         $('.intro1').animate({
@@ -70,9 +70,9 @@
         $('.contant_box2').addClass('fade1');
         $('.contant_box3').removeClass('fade1');
           
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
         $('#dot2d').addClass('pulse2');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
+        $('#dot3d').removeClass('pulse2');
     })
     $('#dot3d').click(function () {
         $('.intro1').animate({
@@ -101,7 +101,7 @@
         $('.contant_box3').addClass('fade1');
         $('.contant_box2').removeClass('fade1');
           
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
+        $('#dot2d').removeClass('pulse2');
         $('#dot3d').addClass('pulse2');
     })

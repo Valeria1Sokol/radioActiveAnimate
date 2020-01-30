@@ -14,10 +14,10 @@
         $('.intro5').animate({
             opacity: 0
         }, 500)
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
-        $('#dot4d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
+        $('#dot2d').removeClass('pulse2');
+        $('#dot3d').removeClass('pulse2');
+        $('#dot4d').removeClass('pulse2');
         $('.main_box').add('fade1');
         $('.contant_box').removeClass('fade1');
         $('.contant_box_bottom').removeClass('fade1');
@@ -49,9 +49,9 @@
         $('.contant_box_top').removeClass('fade1');
         $('.contant_box4').removeClass('fade1');
         $('#dot1d').addClass('pulse2');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
-        $('#dot4d').removeClass('pulse2').addClass('pulse1');
+        $('#dot2d').removeClass('pulse2');
+        $('#dot3d').removeClass('pulse2');
+        $('#dot4d').removeClass('pulse2');
     })
     $('#dot2d').click(function () {
         $('.intro1').animate({
@@ -76,10 +76,10 @@
         $('.contant_box_top').addClass('fade1');
         $('.contant_box3').removeClass('fade1');
         $('.contant_box4').removeClass('fade1');
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
         $('#dot2d').addClass('pulse2');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
-        $('#dot4d').removeClass('pulse2').addClass('pulse1');
+        $('#dot3d').removeClass('pulse2');
+        $('#dot4d').removeClass('pulse2');
     })
     $('#dot3d').click(function () {
         $('.intro1').animate({
@@ -97,10 +97,10 @@
         $('.intro5').animate({
             opacity: 0
         }, 500);
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
+        $('#dot2d').removeClass('pulse2');
         $('#dot3d').addClass('pulse2');
-        $('#dot4d').removeClass('pulse2').addClass('pulse1');
+        $('#dot4d').removeClass('pulse2');
         $('.main_box').removeClass('fade1');
         $('.contant_box').removeClass('fade1');
         $('.contant_box_bottom').removeClass('fade1');
@@ -124,9 +124,9 @@
         $('.intro5').animate({
             opacity: 1
         }, 500);
-        $('#dot1d').removeClass('pulse2').addClass('pulse1');
-        $('#dot2d').removeClass('pulse2').addClass('pulse1');
-        $('#dot3d').removeClass('pulse2').addClass('pulse1');
+        $('#dot1d').removeClass('pulse2');
+        $('#dot2d').removeClass('pulse2');
+        $('#dot3d').removeClass('pulse2');
         $('#dot4d').addClass('pulse2');
         $('.main_box').removeClass('fade1');
         $('.contant_box').removeClass('fade1');
