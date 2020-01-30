@@ -72,24 +72,16 @@
 }
 
 header {
-
-    position: fixed;
     z-index: 8;
 }
 
 footer {
-
-    position: fixed;
     z-index: 7;
 }
 
 #menu,
 .m-menu__overlay {
     position: fixed;
-}
-
-footer {
-    top: 93%;
 }
 
 .main {

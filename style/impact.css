@@ -71,7 +71,6 @@
 header,
 footer {
 
-    position: fixed;
     z-index: 8;
 }
 
@@ -81,7 +80,7 @@ footer {
 }
 
 footer {
-    top: 93%;
+/*    top: 93%;*/
     z-index: 3;
     justify-content: space-between;
 }
@@ -256,7 +255,7 @@ section {
     position: absolute;
     z-index: 4;
     left: 26%;
-    bottom: 1%;
+    bottom: 0%;
 }
 
 .dots_box .dots_text {
