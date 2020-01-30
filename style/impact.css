@@ -81,7 +81,7 @@ footer {
 }
 
 footer {
-    top: 91%;
+    top: 93%;
     z-index: 3;
     justify-content: space-between;
 }
@@ -256,7 +256,7 @@ section {
     position: absolute;
     z-index: 4;
     left: 26%;
-    bottom: 2%;
+    bottom: 1%;
 }
 
 .dots_box .dots_text {
@@ -470,6 +470,10 @@ section {
         top: 4%;
         cursor: pointer;
     }
+    .main_box .video {
+    width: 40.7vw;
+    height: 23vw;
+}
 }
 
 @media all and (max-width:1024px) {
