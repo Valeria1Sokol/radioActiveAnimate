@@ -181,3 +181,15 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+//if (window.innerWidth>='1025')
+//    {
+//       var modal1 = document.getElementById("closeAll");
+//       var check = document.getElementsByClassName("menuCheck");
+//
+//       // When the user clicks anywhere outside of the modal, close it
+//       window.onclick = function (event) {
+//           if (event.target == modal1) {
+//               $('.menuCheck').prop('checked', false);
+//           }
+//       } 
+//    }

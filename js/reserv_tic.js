@@ -3,7 +3,7 @@
                display: 'flex'
            });
        });
- $('.footerIcon_loc').click(function () {
+       $('.footerIcon_loc').click(function () {
            $(".location").css({
                display: 'flex'
            });
@@ -18,12 +18,17 @@
                display: 'flex'
            });
        });
-       var modal = document.getElementById("closeAll");
+
+if (window.innerWidth>='1025')
+    {
+       var modal1 = document.getElementById("closeAll");
        var check = document.getElementsByClassName("menuCheck");
 
        // When the user clicks anywhere outside of the modal, close it
        window.onclick = function (event) {
-           if (event.target == modal) {
-            $('.menuCheck').prop('checked', false);
+           if (event.target == modal1) {
+               $('.menuCheck').prop('checked', false);
            }
-       }
+       } 
+    }
+       
