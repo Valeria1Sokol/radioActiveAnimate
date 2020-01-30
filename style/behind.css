@@ -130,8 +130,8 @@ footer {
 }
 
 .main_box .video {
-    width: 53.34vw;
-    height: 30vw;
+    width: 48vw;
+    height: 27vw;
     background-color: #081f20;
     display: flex;
     flex-direction: column;
@@ -211,37 +211,35 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    /*    background-image: url(../img/touchImg.png);*/
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 
-.dot:first-of-type {
-/*    background-image: url(../img/play-button-outline.png);*/
-    transform: matrix3d(2.1, 0.00366519, 0, 0, -0.00366519, 2.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    width: 1.8vw;
-    height: 1.8vw;
+#dot0d {
+    width: 3.8vw;
+    height: 3.8vw;
+    margin: 0;
 }
 
-.dot img
-{
+.dot img {
     position: absolute;
     max-width: 100%;
 }
-.circle1
-{
-     animation: pulse1 ease-in-out 5.5s infinite;
+
+.circle1 {
+    animation: pulse1 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
 }
-.circle2
-{
-     animation: pulse3 ease-in-out 5.5s infinite;
+
+.circle2 {
+    animation: pulse3 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
@@ -268,23 +266,30 @@ section {
     color: #92c268;
     font-size: 0.63vw;
     text-transform: uppercase;
-    padding: 1vw 2vw 6vw 0;
+    padding: 1vw 0 6vw;
     letter-spacing: 0.2vw;
     line-height: 1.6;
 }
 
+.dotsBox {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 .dots {
     z-index: 100;
-    height: 100%;
-    left: 9%;
+    height: 28vw;
     bottom: 7%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: url(../img/vertical-line.png) center bottom;
     background-repeat: no-repeat;
-    padding: 0 0 6vw;
-    background-size: 2% 88.5%;
+    padding: 1.5vw 0 5.2vw;
+    background-size: 5% 100%;
 }
 
 
@@ -486,6 +491,21 @@ section {
     }
 }
 
+@media all and (max-width:1280px) {
+    .dots {
+        height: 28.5vw;
+        padding: 2.5vw 0 5.7vw;
+    }
+
+    #dot2d {
+        margin-top: 1.2vw;
+    }
+
+    #dot3d {
+        margin-top: 1.5vw;
+    }
+}
+
 @media all and (max-width:1024px) {
     .main {
         padding: 12vw 0 0vw 17.6vw;
@@ -587,31 +607,31 @@ section {
     }
 
     .dots {
-        height: 52vh;
-        padding: 0 0 8vw;
-        background-size: 5% 86.5%;
+        height: 48vh;
+        padding: 6vw 0 9vw;
+        background-size: 5% 100%;
         display: flex;
         align-items: center;
     }
 
-    .dot:nth-child(2) {
-        margin: 5.63vw 0.42vw 0.63vw;
-    }
-
-    .dots_text p:nth-child(2) {
-        margin: 5vw 0 0;
-    }
-
     .dots_box .dots_text {
-        padding: 1.3vw 6vw 9vw 0;
+        padding: 1.3vw 1vw 9vw 0;
         font-size: 1.5vw;
         height: 52vh;
     }
 
-    .dot:first-of-type {
-        width: 4.45vw;
-        height: 4.45vw;
-        transform: scale(2);
+    #dot0 {
+        width: 8vw;
+        height: 8vw;
+        margin: 0;
+    }
+
+    #dot2 {
+        margin-top: 2.5vw;
+    }
+
+    #dot3 {
+        margin-top: 2vw;
     }
 
     .dot {
@@ -796,48 +816,32 @@ section {
         justify-content: center;
         align-items: center;
         position: relative;
-        left: -9%;
+        /*        left: -9%;*/
         bottom: 0%;
         margin: 8vw 0;
     }
 
     .dots {
-        height: 68vw;
-        padding: 0 0 11vw;
-        background-size: 8% 90.5%;
-    }
-
-    .dot:nth-child(2) {
-        margin: 8.63vw 0.42vw 0.63vw;
-    }
-
-    .dots_text p:nth-child(2) {
-        margin: 11vw 0 0;
-    }
-
-    .dots_text p:nth-child(5) {
-        position: relative;
-        top: 1vw;
+        height: 72vw;
+        padding: 8vw 0 11vw;
     }
 
     .dots_box .dots_text {
-        padding: 1.3vw 6vw 10vw 0;
         font-size: 2.1vw;
-        height: 68vw;
+        height: 78vw;
     }
 
-    .dot:first-of-type {
-            width: 4vw;
-    height: 4vw;
+    #dot9 {
+        width: 9vw;
+        height: 9vw;
     }
 
     .dot {
-           width: 4vw;
-    height: 4vw;
+        width: 4vw;
+        height: 4vw;
         cursor: pointer;
-/*        opacity: 0.4;*/
     }
-    
+
 
     /*    modal*/
 
@@ -941,4 +945,17 @@ section {
     .closeBtn img {
         width: 4vw;
     }
+    .dots_box .dots_text {
+    padding: 1.3vw 0vw 9vw 0;
+}
+    .dots {
+    height: 72vw;
+    padding: 8vw 0 9vw;
+}
+    #dot2 {
+    margin-top: 4.5vw;
+}
+    #dot3 {
+    margin-top: 3vw;
+}
 }

@@ -12,37 +12,36 @@ if (widthW >= '1024') {
             $('.about_box_m').animate({
                 opacity: 1,
             }, 1000);
-             $('.about_box_p').animate({
+            $('.about_box_p').animate({
                 opacity: 0,
             }, 100);
-             $('.about_box_m').css({
-                 zIndex:3
+            $('.about_box_m').css({
+                zIndex: 3
             });
-             $('.about_box_p').css({
-                 zIndex:0
+            $('.about_box_p').css({
+                zIndex: 0
             });
             $('.about_box').css({
-                 display:'none'
+                display: 'none'
             });
         });
 
         openB.find(".pierre").click(function () {
+            $('.about_box').css({
+                display: 'none'
+            });
             $('.about_box_p').animate({
                 opacity: 1,
             }, 1000);
-              $('.about_box_m').animate({
+            $('.about_box_m').animate({
                 opacity: 0,
             }, 100);
-              $('.about_box_p').css({
-                 zIndex:3
+            $('.about_box_p').css({
+                zIndex: 3
             });
-             $('.about_box_m').css({
-                 zIndex:0
+            $('.about_box_m').css({
+                zIndex: 0
             });
-             $('.about_box').animate({
-                 display:'none'
-            },500);
-
         });
 
     })
@@ -50,44 +49,45 @@ if (widthW >= '1024') {
 
 
 if (widthW <= '1023') {
-     open.each(function () {
+    open.each(function () {
         var openB = $(this);
         var k = 1;
         openB.find(".marie").click(function () {
-
+            $('.about_box').css({
+                display: 'none'
+            });
             $('.about_box_m').animate({
                 opacity: 1
             }, 1000);
-             $('.about_box_m').css({
-                 zIndex:2
+            $('.about_box_m').css({
+                zIndex: 2
             });
-             $('.about_box_p').animate({
+            $('.about_box_p').animate({
                 opacity: 0
             }, 100);
             $('.about_box_p').css({
-                 zIndex:0
+                zIndex: 0
             });
-             $('.about_box').css({
-                 display:'none'
-            });
+
         });
 
         openB.find(".pierre").click(function () {
+            $('.about_box').css({
+                display: 'none'
+            });
             $('.about_box_p').animate({
                 opacity: 1
             }, 1000);
             $('.about_box_p').css({
-                 zIndex:2
+                zIndex: 2
             });
             $('.about_box_m').css({
-                 zIndex:0
+                zIndex: 0
             });
-              $('.about_box_m').animate({
+            $('.about_box_m').animate({
                 opacity: 0
             }, 100);
-             $('.about_box').css({
-                 display:'none'
-            });
+
 
         });
 
