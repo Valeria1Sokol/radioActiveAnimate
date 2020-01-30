@@ -337,7 +337,7 @@ section {
     background-color: #00393a;
     border-radius: 4.67vw 0 4.67vw 0;
     width: 49%;
-    padding: 3.3vw 2.1vw 1.83vw 3.75vw;
+    padding: 2vw 2.1vw 1.83vw 3.75vw;
     position: relative;
     margin: 3vw 4vw;
 }
@@ -409,7 +409,7 @@ section {
 }
 
 .main .contant_box3 {
-    padding: 3.3vw 1.67vw 1.83vw 3.75vw;
+    padding: 2vw 1.67vw 1.83vw 3.75vw;
     width: 43%;
     margin: 0vw 0 1vw 43vw;
 }
