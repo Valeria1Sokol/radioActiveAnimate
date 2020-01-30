@@ -443,6 +443,11 @@ section > span {
     .container {
         background-image: url(../img/a_rebel_bgn.png);
     }
+    .main .main_box .video {
+        width: 83vw;
+        height: 47vw;
+        margin: 0;
+    }
 }
 
 @media all and (max-width:768px) {
