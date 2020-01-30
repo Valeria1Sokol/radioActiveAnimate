@@ -90,8 +90,8 @@ footer {
     position: relative;
     cursor: pointer;
     text-decoration: none;
-    width: 15vw;
-    height: 19vw;
+    width: 17vw;
+    height: 24vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -122,19 +122,28 @@ footer {
 }
 
 .main .posterL {
-    margin: 1vw -0.6vw 0 0vw;
-    padding: 0 0 2.5vw 2vw;
+    background-image: url(../img/poster3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main .posterC {
-    width: 13.6vw;
-    height: 19vw;
-    margin-top: 6vw;
+    width: 16.6vw;
+    height: 24vw;
+    margin: 6vw 1vw 0;
+    background-image: url(../img/poster1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main .posterR {
-    margin: 1vw 0vw 0 -0.6vw;
-    padding: 0 0 4vw 2vw;
+    padding: 0 0 4vw 0;
+    background-image: url(../img/poster2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -190,16 +199,12 @@ section.modalWindow section.modalWrapper {
     font-size: 1.3vw;
 }
 
-.closeBtn img {
-    width: 1vw;
-}
-
 .modalImg {
     width: 29vw;
     transition: all 2s;
 }
-.modalImg img
-{
+
+.modalImg img {
     width: 100%;
     display: none;
 }
@@ -323,9 +328,9 @@ section.modalWindow section.modalWrapper {
     align-items: center;
     margin: 0 0 1.5vw;
 }
-.btnSience
-{
-    width: 77%;
+
+.btnSience {
+    width: 65%;
 }
 
 .btnNewsPaper:hover {
@@ -508,9 +513,7 @@ fa-chevron-up {
 
 
 @media all and (max-width:1440px) {
-    .main .poster {
-        width: 15vw;
-    }
+  
 
     .modalImg {
         width: 24vw;
@@ -520,12 +523,14 @@ fa-chevron-up {
     .modalWripperImg {
         height: 100%;
     }
+
+    .btnSience {
+        width: 77%;
+    }
 }
 
 @media all and (max-width:1024px) {
-    .main .poster {
-        width: 19vw;
-    }
+  
 
     .modalWripperImg {
         height: 65%;
@@ -538,8 +543,8 @@ fa-chevron-up {
         width: 28vw;
         transition: all 2s;
     }
-    .modalImg img
-    {
+
+    .modalImg img {
         max-width: 100%;
     }
 
@@ -590,20 +595,21 @@ fa-chevron-up {
         perspective: 600px;
         display: flex;
         flex-direction: row;
+        margin-top: 7vw;
 
     }
 
     .carousel .carousel-item {
         visibility: hidden;
         width: 200px;
-        height: 64.5vw;
+        height: 80vw;
         position: absolute;
         top: 0;
         left: 0;
     }
 
     .carousel-item {
-        width: 45.8vw !important;
+        width: 56.8vw!important;
     }
 
     .carousel .indicators .indicator-item {
@@ -704,7 +710,7 @@ fa-chevron-up {
     }
 
     .modal .info p {
-        font-size: 1.9vw;
+        font-size: 2.5vw;
         /*        margin: 2vw 0 0;*/
         letter-spacing: 0.3vw;
     }
@@ -730,6 +736,7 @@ fa-chevron-up {
 
     .closeBtn img {
         width: 3vw;
+        height: 3vw;
     }
 
     .modal .h1 {
@@ -769,12 +776,12 @@ fa-chevron-up {
 
     .news_tittle {
         display: flex;
-        width: 53%;
-        font-size: 2.2vw;
+        width: 66%;
+        font-size: 3.5vw;
         color: white;
         font-weight: 100;
         letter-spacing: 0.5vw;
-        line-height: 2;
+        line-height: 1.5;
         text-align: center;
     }
 
@@ -782,7 +789,7 @@ fa-chevron-up {
     .main {
         flex-direction: column;
         justify-content: space-between;
-        padding: 12vw 0 0;
+        padding: 7vw 0 0;
     }
 
     .panel-heading:not(.collapsed) .panel-title {
@@ -815,14 +822,16 @@ fa-chevron-up {
     .pull-right {
         width: 3vw;
     }
+
     .btnSience {
-    width: 49%;
-}
+        width: 49%;
+    }
+
     .btnImpact {
-    width: 53%;
-}
-    .btnRebel
-    {
+        width: 53%;
+    }
+
+    .btnRebel {
         width: 53%;
     }
 
@@ -841,6 +850,7 @@ fa-chevron-up {
     .reserv_tic {
         border-radius: 7.6vw;
     }
+
     .btnNewsPaper {
         padding: 1.6vw 2.4vw;
     }

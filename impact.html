@@ -28,17 +28,17 @@
             <nav role="navigation" class="nav_menu">
                 <div id="menuToggle">
                     <input type="checkbox" / class="menuCheck">
-                    <span></span>
-                    <span class="center_span"></span>
-                    <span class="last_span"></span>
+                    <span class="span line1"></span>
+                    <span class="center_span span"></span>
+                    <span class="last_span span"></span>
                     <label class="m-menu__overlay"></label>
                     <ul id="menu">
                         <li>
                             <div class="lg_tittle">
                                 <p class="menu_lg">Select a language</p>
-                                <p class="menu_lg_p">ENG</p>
+                                <a href class="menu_lg_p">ENG</a>
                                 <p class="menu_lg"> | </p>
-                                <p class="menu_lg_p">FRA</p>
+                                <a href class="menu_lg_p">FRA</a>
                             </div>
                         </li>
                         <a href="index.html">
@@ -46,7 +46,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A REBEL IN HER ELEMENT</p>
                                     <p class="tittle_p">MARIE SKŁODOWSKA CURIE - A PIONEER WHO REVOLUTIONISED SCIENCE - STARTED A CHAIN REACTION WHICH SHAPED THE 20TH CENTRURY. FIND OUT HOW. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -55,7 +58,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A peculiar element</p>
                                     <p class="tittle_p">WHAT IS RADIOACTIVITY AND HOW DID IT CARVE OUT MARIE CURIE'S PLACE IN SCIENTIFIC HISTORY? DIVE INTO THE SCIENCE. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -63,15 +69,18 @@
                             <li>
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">impacts and consequences</p>
-                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD.<br class='desctop'> SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD. SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
                         <li>
                             <div class="btn_menu_list">
                                 <input type="button" class="watch_trailer" value="WATCH TRAILER">
-                              <div class="res_news">
+                                <div class="res_news">
                                     <div class="btnMenu reserve"><a href="#">reserve tickets</a></div>
                                     <div class="btnMenu newsroom"><a href="newspaper.html">NEWSROOM</a></div>
                                 </div>
@@ -81,12 +90,14 @@
                 </div>
             </nav>
             <div class="header_container">
-               <div class="text_container"><p class="header_text_p">IN CINEMAS MARCH 2020</p></div>
+                <div class="text_container">
+                    <p class="header_text_p">IN CINEMAS MARCH 2020</p>
+                </div>
                 <div class="header_center">
-                   <p class="header_text">RESERVE TICKETS</p>
+                    <p class="header_text">RESERVE TICKETS</p>
                 </div>
                 <div class="header_btn_box desctop">
-                   <a href="#0" class="btn10 header_btn share">
+                    <a href="#0" class="btn10 header_btn share">
                         <span>share</span>
                         <div class="transition"></div>
                     </a>
@@ -128,7 +139,9 @@
                 </div>
                 <div class="main_box">
                     <div class="video">
-                        <img class="close" src="img/x.png" alt=""> <input type="button" class="play" value="">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tZS-em7GIjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img class="close closeIcon" src="img/x.png" alt="">
+                        <!--                    <input type="button" class="play" value="">-->
                     </div>
                 </div>
 
@@ -147,12 +160,12 @@
 
                         When the First World War broke out, Marie put her work on hold. She dedicated herself to designing the ‘radiological car’ – a portable X-ray unit for army surgeons to use on the battlefield. These life-saving vehicles became known as ‘Little Curies’.
                     </p>
-                   <a class="header_btn" href="./newspaper.html">discover more</a>
+                    <a class="header_btn" href="./newspaper.html">discover more</a>
                 </div>
             </section>
         </div>
         <div class="intro intro3">
-           <div class="video">
+            <div class="video">
                 <video class="video__media" src="./video/impact%20and%20consequences%2017.mp4" autoplay muted loop></video>
             </div>
             <section class="main">
@@ -178,7 +191,7 @@
                     <img src="img/icon3.png" class="behind_icon">
                     <h1 class="contant_h">Power in our hands:<br> Nuclear energy </h1>
                     <p class="contant_text">Others built on Marie and Pierre’s work. After Marie’s death in the 1930s, researchers found that they could split the nucleus of the atom, releasing energy in a potent reaction called ‘nuclear fission’. Then the Second World War broke out, and scientists everywhere raced to build a nuclear weapon. The United States carried out the first successful test in July 1945, and a month later, nuclear bombs were dropped on the Japanese cities of Hiroshima and Nagasaki. </p>
-                   <a class="header_btn" href="./newspaper.html">discover more</a>
+                    <a class="header_btn" href="./newspaper.html">discover more</a>
                 </div>
             </section>
         </div>
@@ -191,9 +204,9 @@
             <div class="dots_box">
                 <div class="dots_text">
                     <p>Watch</p>
-                <p>Out of the lab,<br>onto the frontline</p>
-                <p>The seed of an idea</p>
-                <p>Power in our hands</p>
+                    <p>Out of the lab,<br>onto the frontline</p>
+                    <p>The seed of an idea</p>
+                    <p>Power in our hands</p>
                 </div>
                 <div class="dots">
                     <img src="./img/play-button-outline.png" class="dot" id="dot11">
@@ -206,13 +219,16 @@
         <div class="modal modalWindow" id="myModal">
             <div class="main_box">
                 <div class="video">
-                    <img class="close" src="img/x.png" alt=""> <input type="button" class="play" value="">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tZS-em7GIjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="close closeIcon" src="img/x.png" alt="">
+                    <!--                    <input type="button" class="play" value="">-->
                 </div>
             </div>
             <div class="contant_box pay">
                 <img src="img/icon4.png" class="behind_icon">
-                <h1 class="contant_h">The seed of an idea: Cancer treatment </h1>
-                <p class="contant_text">In the years after the Curies discovered radium, they soon began to recognise its medical potential, discovering that radiation could kill cancer cells more quickly than healthy cells. This realisation gave us a real chance against cancer for the first time.
+                <h1 class="contant_h">out of the lab, into the frontline </h1>
+                <p class="contant_text">Marie was more than a brilliant mind. She was a humanitarian who wanted her science to save lives.
+                    When the First World War broke out, Marie put her work on hold. She dedicated herself to designing the ‘radiological car’ – a portable X-ray unit for army surgeons to use on the battlefield. These life-saving vehicles became known as ‘Little Curies’.
                 </p>
                 <a class="header_btn" href="./newspaper.html">discover more</a>
             </div>
@@ -251,30 +267,52 @@
             <img src="img/location-bug.png" alt="" class="footerIcon_loc">
         </footer>
     </div>
-     <section class="modal2">
-            <div class="reserv_tic">
-                <div class="boxClose">
-                    <img src="./img/x.png" alt="">
-                </div>
-                <div class="res_tic_btn"><a href>
-                        RESERVE TICKETS
-                    </a></div>
-                <div class="shareBox">
-                    <p>like and share</p>
+    <section class="modal2">
+        <div class="reserv_tic">
+            <div class="boxClose">
+                <img src="./img/x.png" alt="">
+            </div>
+            <div class="res_tic_btn"><a href>
+                    RESERVE TICKETS
+                </a></div>
+            <div class="shareBox">
+                <p>like and share</p>
 
-                </div>
-                <div class="shareBox">
-                    <div class="shareIcon">
-                        <img src="./img/insta.png" alt="">
-                        <img src="./img/face.png" alt="">
-                        <img src="./img/twit.png" alt="">
-                    </div>
+            </div>
+            <div class="shareBox">
+                <div class="shareIcon">
+                    <img src="./img/insta.png" alt="">
+                    <img src="./img/face.png" alt="">
+                    <img src="./img/twit.png" alt="">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="modal2 location">
+        <div class="reserv_tic">
+            <div class="boxClose">
+                <img src="./img/x.png" alt="">
+            </div>
+            <div class="res_tic_btn"><a href>
+                    RESERVE TICKETS
+                </a></div>
+            <div class="shareBox">
+                <p>like and share</p>
+
+            </div>
+            <div class="shareBox">
+                <div class="shareIcon">
+                    <img src="./img/insta.png" alt="">
+                    <img src="./img/face.png" alt="">
+                    <img src="./img/twit.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./js/impact.js"></script>
-    <script src="./js/modal_mobile2.js"></script>
+
     <script src="./js/reserv_tic.js"></script>
+    <script src="./js/modal_mobile2.js"></script>
 </body>
 
 </html>

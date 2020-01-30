@@ -21,6 +21,9 @@ if (widthW >= '1024') {
              $('.about_box_p').css({
                  zIndex:0
             });
+            $('.about_box').css({
+                 display:'none'
+            });
         });
 
         openB.find(".pierre").click(function () {
@@ -36,6 +39,9 @@ if (widthW >= '1024') {
              $('.about_box_m').css({
                  zIndex:0
             });
+             $('.about_box').animate({
+                 display:'none'
+            },500);
 
         });
 
@@ -61,6 +67,9 @@ if (widthW <= '1023') {
             $('.about_box_p').css({
                  zIndex:0
             });
+             $('.about_box').css({
+                 display:'none'
+            });
         });
 
         openB.find(".pierre").click(function () {
@@ -76,6 +85,9 @@ if (widthW <= '1023') {
               $('.about_box_m').animate({
                 opacity: 0
             }, 100);
+             $('.about_box').css({
+                 display:'none'
+            });
 
         });
 

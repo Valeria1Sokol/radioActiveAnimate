@@ -127,8 +127,8 @@ footer {
 }
 
 .main_box .video {
-    width: 67%;
-    height: 24vw;
+    width: 53.34vw;
+    height: 30vw;
     background-color: #081f20;
     display: flex;
     flex-direction: column;
@@ -154,8 +154,7 @@ footer {
 
 .main_box .video .close {
     position: absolute;
-    left: 97%;
-
+    left: 95%;
     top: 4%;
     cursor: pointer;
 }
@@ -290,19 +289,11 @@ section {
     display: none;
 }
 
-
 .title {
     height: 30px;
     line-height: 30px;
     text-align: center;
 }
-
-
-.hideMe {
-    opacity: 0;
-}
-
-
 
 .contant_box {
     display: flex;
@@ -408,10 +399,13 @@ section {
 
     .main .main_tittle {
         font-size: 0.95vw;
-        /*        padding-left: 5.7vw;*/
     }
+}
 
-
+@media all and (max-width:1600px) {
+    .main_box .video .close {
+        left: 96%;
+    }
 }
 
 @media screen and (max-width:1440px) {
@@ -425,12 +419,13 @@ section {
         width: 57%;
         height: 20vw;
     }
+
     main_box .video .close {
-    position: absolute;
-    left: 96%;
-    top: 4%;
-    cursor: pointer;
-}
+        position: absolute;
+        left: 96%;
+        top: 4%;
+        cursor: pointer;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -664,6 +659,7 @@ section {
         border-radius: 6.3vw;
         padding: 1.73vw 6.8vw;
         letter-spacing: 0.5vw;
+        margin: 0 5vw 0 0;
     }
 
     .modalImg {
@@ -850,7 +846,7 @@ section {
 
     .contant_text {
         color: white;
-        font-size: 2.3vw;
+        font-size: 2.6vw;
         text-transform: uppercase;
         letter-spacing: 0.3vw;
         line-height: 1.6;

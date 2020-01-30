@@ -18,10 +18,11 @@
     src: url("../font/AvenirLTStd-Light_2.otf") format("opentype");
 }
 
-header{
+header {
     z-index: 3;
 }
-footer{
+
+footer {
     z-index: 2;
 }
 
@@ -129,8 +130,8 @@ footer{
 }
 
 .main .main_box .video {
-    width: 50%;
-    height: 25vw;
+    width: 53.34vw;
+    height: 30vw;
     background-color: #081f20;
     display: flex;
     flex-direction: column;
@@ -138,6 +139,11 @@ footer{
     align-items: center;
     position: relative;
     z-index: 0;
+}
+
+.main .main_box .video .video_ {
+    width: 100%;
+    height: 100%;
 }
 
 .main .video .play {
@@ -155,7 +161,7 @@ footer{
 
 .main .video .close {
     position: absolute;
-    left: 97%;
+   left: 95%;
     top: 4%;
     cursor: pointer;
 }
@@ -242,6 +248,7 @@ footer{
     position: relative;
     z-index: 1;
     height: fit-content;
+    margin-top: 20%;
 }
 
 .about_Maria {
@@ -328,7 +335,7 @@ footer{
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
-/*    z-index: 2;*/
+    /*    z-index: 2;*/
     position: relative;
     text-decoration: none;
 }
@@ -365,11 +372,6 @@ section > span {
         padding-left: 5.7vw;
     }
 
-    .main .main_box .video {
-        width: 60%;
-        height: 28vw;
-    }
-
     .main .btn_more p {
         font-size: 0.53vw;
         font-family: 'AvenirM';
@@ -391,9 +393,9 @@ section > span {
 
 
 @media all and (max-width:1024px) {
-    footer{
-    z-index: 0;
-}
+    footer {
+        z-index: 0;
+    }
 
     .main .main_box {
         flex-direction: column-reverse;
@@ -433,7 +435,8 @@ section > span {
         border-radius: 6vw;
         margin: 2vw 0 0;
     }
-     .intro {
+
+    .intro {
         display: none;
     }
 
@@ -455,7 +458,7 @@ section > span {
         height: 34vw;
     }
 
-   
+
 }
 
 

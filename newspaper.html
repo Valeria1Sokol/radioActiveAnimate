@@ -41,17 +41,17 @@
             <nav role="navigation" class="nav_menu">
                 <div id="menuToggle">
                     <input type="checkbox" / class="menuCheck">
-                    <span></span>
-                    <span class="center_span"></span>
-                    <span class="last_span"></span>
+                    <span class="span line1"></span>
+                    <span class="center_span span"></span>
+                    <span class="last_span span"></span>
                     <label class="m-menu__overlay"></label>
                     <ul id="menu">
                         <li>
                             <div class="lg_tittle">
                                 <p class="menu_lg">Select a language</p>
-                                <p class="menu_lg_p">ENG</p>
+                                <a href class="menu_lg_p">ENG</a>
                                 <p class="menu_lg"> | </p>
-                                <p class="menu_lg_p">FRA</p>
+                                <a href class="menu_lg_p">FRA</a>
                             </div>
                         </li>
                         <a href="index.html">
@@ -59,7 +59,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A REBEL IN HER ELEMENT</p>
                                     <p class="tittle_p">MARIE SKŁODOWSKA CURIE - A PIONEER WHO REVOLUTIONISED SCIENCE - STARTED A CHAIN REACTION WHICH SHAPED THE 20TH CENTRURY. FIND OUT HOW. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                   <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -68,7 +71,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A peculiar element</p>
                                     <p class="tittle_p">WHAT IS RADIOACTIVITY AND HOW DID IT CARVE OUT MARIE CURIE'S PLACE IN SCIENTIFIC HISTORY? DIVE INTO THE SCIENCE. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -76,8 +82,11 @@
                             <li>
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">impacts and consequences</p>
-                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD.<br class='desctop'> SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD. SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
+                                   <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -122,7 +131,7 @@
         <section class="main">
             <div class="intro">
                 <div class="video">
-                    <video class="video__media" src="./video/newspaper%20stand%2019.mp4" autoplay muted loop></video>
+                    <video class="video__media" src="./video/t_video5300798475800151753.mp4" autoplay muted loop></video>
                 </div>
             </div>
             <p class="news_tittle">TOUCH ON ANY OF THE MAGAZINES TO FIND OUT MORE </p>
@@ -323,7 +332,7 @@
                     </section>
                 </div>
             </section>
-            <a class="closeBtn"><img src="./img/x.png"></a>
+            <a class="closeBtn"><img src="./img/x.png" class='closeIcon'></a>
         </section>
 
 
@@ -347,7 +356,7 @@
         </footer>
         <section class="modal2">
             <div class="reserv_tic">
-                <div class="boxClose">
+                <div class="boxClose ">
                     <img src="./img/x.png" alt="">
                 </div>
                 <div class="res_tic_btn"><a href>
@@ -366,6 +375,27 @@
                 </div>
             </div>
         </section>
+         <section class="modal2 location">
+            <div class="reserv_tic">
+                <div class="boxClose">
+                    <img src="./img/x.png" alt="">
+                </div>
+                <div class="res_tic_btn"><a href>
+                        RESERVE TICKETS
+                    </a></div>
+                <div class="shareBox">
+                    <p>like and share</p>
+
+                </div>
+                <div class="shareBox">
+                    <div class="shareIcon">
+                        <img src="./img/insta.png" alt="">
+                        <img src="./img/face.png" alt="">
+                        <img src="./img/twit.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section> 
 
     </div>
     <script src="./js/scriptNewsPaper.js"></script>

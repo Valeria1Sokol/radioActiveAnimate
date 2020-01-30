@@ -136,14 +136,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.safariView {
-    display: none;
-}
-
-.all {
-    display: flex;
-}
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -166,7 +158,7 @@ header {
 
 nav {
     background-color: transparent;
-    width: fit-content
+    width: fit-content;
 }
 
 [type="checkbox"] + span:not(.lever):before,
@@ -182,18 +174,10 @@ nav {
     user-select: none;
 }
 
-#menuToggle a {
-    text-decoration: none;
-    color: #232323;
-
-    transition: color 0.3s ease;
-}
-
-
 #menuToggle .menuCheck {
     display: block;
     width: 2.1vw;
-    height: 1.7vw;
+    height: 2.1vw;
     position: absolute;
     top: 2.1vw;
     left: 2.03vw;
@@ -201,31 +185,27 @@ nav {
     opacity: 0;
     z-index: 1000;
     -webkit-touch-callout: none;
+    cursor: pointer;
 }
 
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+#menuToggle .span {
     display: block;
     width: 2vw;
     height: 1px;
     margin-bottom: 10px;
     position: relative;
     background: #93c469;
-    z-index: 998;
+    z-index: 999;
     transform-origin: 4px 0px;
+    transition: all .12s ease-in-out;
+    -webkit-transition: all .12s ease-in-out;
 }
 
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-    width: 26px;
+#menuToggle .line1 {
+    transform-origin: 84% 50%;
 }
 
 #menuToggle .center_span {
@@ -234,25 +214,29 @@ nav {
 
 #menuToggle .last_span {
     width: 1.4vw;
+    transform-origin: 84% -50%;
+    width: 19px;
 }
 
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle .menuCheck:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(10px, 13px);
-    background: #93c469;
-    width: 15px;
-    height: 2px;
-    left: 0.8vw;
-    top: -0.8vw;
-    z-index: 999;
+#menuToggle .menuCheck:checked ~ .line1 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
 }
 
 #menuToggle .menuCheck:checked ~ .center_span {
-    transform: rotate(-45deg) translate(-9px, 4px);
+    opacity: 0;
+}
+
+#menuToggle .menuCheck:checked ~ .last_span {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: -3px;
+    width: 2vw;
 }
 
 #menuToggle .menuCheck:checked ~ .m-menu__overlay {
@@ -271,19 +255,10 @@ nav {
 }
 
 /*
- * But let's hide the middle one.
- */
-#menuToggle .menuCheck:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle .menuCheck:checked ~ span:nth-last-child(2) {
+#menuToggle .menuCheck:checked ~ .span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
-
 }
 
 /*
@@ -307,7 +282,6 @@ nav {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     z-index: 998;
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
@@ -332,12 +306,14 @@ nav {
 
 .menu_lg_p {
     font-size: 0.65vw;
-    color: #93c469;
+    color: #93c469 !important;
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin: 0 7px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .menuList {
@@ -348,6 +324,8 @@ nav {
     background-image: linear-gradient(-90deg, rgb(12, 74, 72, 0.46), rgb(14, 95, 92, 0.46));
     padding: 2.3vh 6.2vw;
     margin: 0 0 7px;
+    box-sizing: border-box;
+    height: auto;
 }
 
 .menuList .note_p {
@@ -390,7 +368,12 @@ nav {
 
 #btn_watch {
     background-color: #0c3336;
-
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden !important;
+    outline: none;
     border-radius: 25px;
     font-size: 0.53vw;
     font-weight: 600;
@@ -400,11 +383,99 @@ nav {
     letter-spacing: 3px;
     padding: 0.63vw 1.3vw 0.63vw 3.2vw;
     margin: 1vw 1.6vw 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+    box-sizing: border-box;
     background-image: url(../img/vidicon.png);
     background-repeat: no-repeat;
     background-size: 9%;
     background-position: 16%;
 }
+
+#btn_watch:visited {
+    text-decoration: none;
+}
+
+#btn_watch:link {
+    text-decoration: none;
+}
+
+#btn_watch:hover {
+    border: 1px solid #93c469;
+    color: #081f20 !important;
+    text-decoration: none;
+}
+
+#btn_watch::before {
+    content: '';
+    text-decoration: none;
+    width: 0%;
+    height: 104%;
+    display: block;
+    background: rgb(147, 196, 105);
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#btn_watch::after {
+    content: '';
+    text-decoration: none;
+    width: 0%;
+    height: 100%;
+    display: block;
+    background-color: rgb(147, 196, 105);
+    background-color: rgba(147, 196, 105, 0.5);
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2, .95, .57, .99);
+    -moz-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+    -o-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+    transition: all .4s cubic-bezier(.2, .95, .57, .99);
+}
+
+#btn_watch:hover::before,
+#btn_watch:hover::before {
+    opacity: 1;
+    width: 120%;
+    text-decoration: none;
+}
+
+#btn_watch:hover::after,
+#btn_watch:hover::after {
+    opacity: 1;
+    width: 125%;
+    text-decoration: none;
+}
+
+#btn_watch:active {
+    text-decoration: none !important;
+    background-color: #93c469 !important;
+    color: #202020 !important;
+    -webkit-box-shadow: 0 0 10px #93c469;
+    -moz-box-shadow: 0 0 10px #93c469;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
 
 .btn_menu_list {
     display: flex;
@@ -429,9 +500,6 @@ nav {
     cursor: pointer;
 }
 
-
-
-
 .header_container {
     display: flex;
     flex-direction: row;
@@ -450,6 +518,7 @@ nav {
     background-position: center;
     padding: 1.3vw 6.6vw;
     transition: all .6s;
+    cursor: pointer;
 }
 
 .header_center .header_text {
@@ -465,6 +534,11 @@ nav {
 .header_center .header_text:active {
     text-decoration: none;
     color: #0e4a4f;
+}
+
+.header_center:hover .header_text {
+
+    color: white;
 }
 
 .header_center:hover {
@@ -529,11 +603,22 @@ footer {
 
 footer .footerIcon_Sound {
     width: 2.4vw;
+    transition: all 1s;
+    cursor: pointer;
 }
 
 footer .footerIcon_loc {
     width: 1.7vw;
+    transition: all 1s;
+    cursor: pointer;
 }
+
+.footerIcon_Sound:hover,
+.footerIcon_loc:hover {
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
 
 .fotterTittle {
     font-size: 0.58vw;
@@ -557,6 +642,11 @@ footer .footerIcon_loc {
     flex-direction: row;
     width: 96%;
     padding: 0 4% 0 23%;
+}
+
+.closeIcon {
+    width: 1.3vw;
+    height: 1.3vw;
 }
 
 .mobile {
@@ -633,15 +723,12 @@ footer .footerIcon_loc {
 
 @media all and (max-width:1920px) {
 
-
     .header_center .header_text {
         font-size: 0.8vw;
     }
 
     .header_btn_box .header_btn {
-
         font-size: 0.73vw;
-
         padding: 0.73vw 1.8vw;
     }
 
@@ -674,6 +761,17 @@ footer .footerIcon_loc {
     .header_center {
         padding: 1.9vw 8.7vw;
     }
+    #menuToggle .menuCheck:checked ~ .line1 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+}
+    #menuToggle .menuCheck:checked ~ .last_span {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: -8px;
+    width: 2vw;
+}
 
 }
 
@@ -716,11 +814,11 @@ footer .footerIcon_loc {
         display: block;
         width: 7.4vw;
         height: 3.7vw;
-        top: 2.1vw;
+        top: 4.1vw;
         left: 4.1vw;
     }
 
-    #menuToggle span {
+    #menuToggle .span {
         width: 6vw;
         height: 3px;
         margin-bottom: 12px;
@@ -781,11 +879,7 @@ footer .footerIcon_loc {
         letter-spacing: 0.5vw;
     }
 
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(10px, 12px);
-        width: 2vw;
-        height: 3px;
-    }
+
 
     .lg_tittle {
         padding: 0 11.3vw 2.4vw;
@@ -814,6 +908,16 @@ footer .footerIcon_loc {
         font-size: 1.3vw;
         padding: 3vw 4.3vw 3vw 8.2vw;
         margin: 0;
+    }
+
+    #menuToggle .menuCheck:checked ~ .last_span {
+        top: -9px;
+        width: 4vw;
+    }
+
+    #menuToggle .menuCheck:checked ~ .line1 {
+        bottom: 0px;
+        width: 4vw;
     }
 
     .menuList .note_p .circle {
@@ -866,6 +970,7 @@ footer .footerIcon_loc {
 
     #menuToggle .menuCheck {
         height: 4.7vw;
+        top: 2.7vw;
     }
 
     .menuList .note_p {
@@ -873,8 +978,8 @@ footer .footerIcon_loc {
     }
 
     .menuList .tittle_p {
-        width: 66%;
-        font-size: 1.6vw;
+       width: 75%;
+    font-size: 2vw;
         letter-spacing: 0.5vw;
         padding: 1.3vw 0 0 2.4vw;
     }
@@ -903,8 +1008,15 @@ footer .footerIcon_loc {
         margin: 0vw 0 1.5vw;
     }
 
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(13px, 14.5px);
+    #menuToggle .menuCheck:checked ~ .last_span {
+        top: -15px;
+        width: 4vw;
+    }
+
+    #menuToggle .menuCheck:checked ~ .line1 {
+        bottom: 1px;
+        left: -1px;
+        width: 4vw;
     }
 
     #menuToggle {
@@ -927,7 +1039,7 @@ footer .footerIcon_loc {
         margin: 0 0 1.4vw;
     }
 
-    #menuToggle span {
+    #menuToggle .span {
         width: 9vw;
         height: 3px;
         margin-bottom: 8px;
@@ -1039,49 +1151,38 @@ footer .footerIcon_loc {
         background-image: none;
     }
 
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(9.5px, 12.5px);
-        width: 3vw;
-        height: 2px;
+    #menuToggle .menuCheck:checked ~ .line1 {
+        bottom: -1px;
+        left: -2px;
+        width: 7vw;
+    }
+
+    #menuToggle .menuCheck:checked ~ .last_span {
+        top: -6px;
+        width: 7vw;
     }
 
 }
 
-@media all and (max-width:414px) {
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(10px, 13px);
-
-    }
-}
+@media all and (max-width:414px) {}
 
 @media all and (max-width:375px) {
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(10.5px, 13.5px);
-    }
-
     #btn_watch {
         margin-top: 1vw;
     }
+
+    #menuToggle .menuCheck:checked ~ .line1 {
+        bottom: -2px;
+    }
 }
 
-@media all and (max-width:325px) {
-    #menuToggle .menuCheck:checked ~ span {
-        transform: rotate(45deg) translate(11px, 14px);
-
-    }
-
+@media all and (max-width:320px) {
     .header_center {
         background-size: 95%;
     }
 
-}
-
-@keyframes fadeBox {
-    0% {
-        opacity: 0;
+    #menuToggle .menuCheck:checked ~ .line1 {
+        bottom: -4px;
     }
 
-    50% {
-        opacity: 1;
-    }
 }

@@ -21,17 +21,17 @@
             <nav role="navigation" class="nav_menu">
                 <div id="menuToggle">
                     <input type="checkbox" / class="menuCheck">
-                    <span></span>
-                    <span class="center_span"></span>
-                    <span class="last_span"></span>
+                    <span class="span line1"></span>
+                    <span class="center_span span"></span>
+                    <span class="last_span span"></span>
                     <label class="m-menu__overlay"></label>
                     <ul id="menu">
                         <li>
                             <div class="lg_tittle">
                                 <p class="menu_lg">Select a language</p>
-                                <p class="menu_lg_p">ENG</p>
+                                <a href class="menu_lg_p">ENG</a>
                                 <p class="menu_lg"> | </p>
-                                <p class="menu_lg_p">FRA</p>
+                                <a href class="menu_lg_p">FRA</a>
                             </div>
                         </li>
                         <a href="index.html">
@@ -39,7 +39,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A REBEL IN HER ELEMENT</p>
                                     <p class="tittle_p">MARIE SKŁODOWSKA CURIE - A PIONEER WHO REVOLUTIONISED SCIENCE - STARTED A CHAIN REACTION WHICH SHAPED THE 20TH CENTRURY. FIND OUT HOW. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -48,7 +51,10 @@
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">A peculiar element</p>
                                     <p class="tittle_p">WHAT IS RADIOACTIVITY AND HOW DID IT CARVE OUT MARIE CURIE'S PLACE IN SCIENTIFIC HISTORY? DIVE INTO THE SCIENCE. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
@@ -56,15 +62,18 @@
                             <li>
                                 <div class="menuList">
                                     <p class="note_p"><img class="circle" src="./img/Ellipse.png">impacts and consequences</p>
-                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD.<br class='desctop'> SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
-                                    <input type="button" value="watch now" id="btn_watch">
+                                    <p class="tittle_p">MARIE CURIE'S WORK HAS TAKEN US INTO A BRAVE NEW WORLD. SEE HOW THE IMPACTS OF HER DISCOVERIES ARE STILL FELT TODAY. </p>
+                                    <a href id="btn_watch">
+                                        <span>watch now</span>
+                                        <div class="transition"></div>
+                                    </a>
                                 </div>
                             </li>
                         </a>
                         <li>
                             <div class="btn_menu_list">
                                 <input type="button" class="watch_trailer" value="WATCH TRAILER">
-                              <div class="res_news">
+                                <div class="res_news">
                                     <div class="btnMenu reserve"><a href="#">reserve tickets</a></div>
                                     <div class="btnMenu newsroom"><a href="newspaper.html">NEWSROOM</a></div>
                                 </div>
@@ -74,12 +83,14 @@
                 </div>
             </nav>
             <div class="header_container">
-               <div class="text_container"><p class="header_text_p">IN CINEMAS MARCH 2020</p></div>
+                <div class="text_container">
+                    <p class="header_text_p">IN CINEMAS MARCH 2020</p>
+                </div>
                 <div class="header_center">
-                   <p class="header_text">RESERVE TICKETS</p>
+                    <p class="header_text">RESERVE TICKETS</p>
                 </div>
                 <div class="header_btn_box desctop">
-                  <a href="#0" class="btn10 header_btn share">
+                    <a href="#0" class="btn10 header_btn share">
                         <span>share</span>
                         <div class="transition"></div>
                     </a>
@@ -111,6 +122,10 @@
             </div>
             <div class="info">
                 <h1 class="main_h1 desctop_r">A REBEL IN HER ELEMENT</h1>
+                <div class="about_box">
+                    <div class="about_Maria"> </div>
+                    <p class="about_p">A rebel and pioneer who revolutionised science - started a chain reaction which shaped the 20th century.</p>
+                </div>
             </div>
 
         </section>
@@ -130,7 +145,7 @@
             <img src="img/location-bug.png" alt="" class="footerIcon_loc">
         </footer>
         <div class="about_box_m">
-           <a class="closeBtn btnClose1" id="btnClose1"><img src="./img/x.png"></a>
+            <a class="closeBtn btnClose1" id="btnClose1"><img src="./img/x.png"></a>
             <div class="about_Maria"> </div>
             <div>
                 <p class="about_tittle">WHO WAS MARIE CURIE?</p>
@@ -138,38 +153,59 @@
                 <a class="header_btn" href="./newspaper.html">discover more</a>
             </div>
         </div>
-         <div class="about_box_p">
-           <a class="closeBtn" id="btnClose2"><img src="./img/x.png"></a>
+        <div class="about_box_p">
+            <a class="closeBtn" id="btnClose2"><img src="./img/x.png"></a>
             <div class="about_Pierre"> </div>
-            <div >
+            <div>
                 <p class="about_tittle">WHO WAS PIERRE CURIE?</p>
-                        <p class="about_p2">AN INTERNATIONALLY KNOWN PHYSICIST AND MARIE'S HUSBAND, PEOPLE OFTEN ASSUMED THAT MARIE WAS JUST PIERRE'S LAB ASSISTANT. HER NAME WAS ACTUALLY LEFT OFF THE NOBEL PRIZE NOMINATION FOR THEIR WORK, BUT PIERRE INSISTED THAT SHE WAS INCLUDED. </p>
+                <p class="about_p2">AN INTERNATIONALLY KNOWN PHYSICIST AND MARIE'S HUSBAND, PEOPLE OFTEN ASSUMED THAT MARIE WAS JUST PIERRE'S LAB ASSISTANT. HER NAME WAS ACTUALLY LEFT OFF THE NOBEL PRIZE NOMINATION FOR THEIR WORK, BUT PIERRE INSISTED THAT SHE WAS INCLUDED. </p>
                 <a class="header_btn" href="./newspaper.html">discover more</a>
             </div>
-             
+
         </div>
     </div>
-     <section class="modal2">
-            <div class="reserv_tic">
-                <div class="boxClose">
-                    <img src="./img/x.png" alt="">
-                </div>
-                <div class="res_tic_btn"><a href>
-                        RESERVE TICKETS
-                    </a></div>
-                <div class="shareBox">
-                    <p>like and share</p>
+    <section class="modal2">
+        <div class="reserv_tic">
+            <div class="boxClose">
+                <img src="./img/x.png" alt="">
+            </div>
+            <div class="res_tic_btn"><a href>
+                    RESERVE TICKETS
+                </a></div>
+            <div class="shareBox">
+                <p>like and share</p>
 
-                </div>
-                <div class="shareBox">
-                    <div class="shareIcon">
-                        <img src="./img/insta.png" alt="">
-                        <img src="./img/face.png" alt="">
-                        <img src="./img/twit.png" alt="">
-                    </div>
+            </div>
+            <div class="shareBox">
+                <div class="shareIcon">
+                    <img src="./img/insta.png" alt="">
+                    <img src="./img/face.png" alt="">
+                    <img src="./img/twit.png" alt="">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="modal2 location">
+        <div class="reserv_tic">
+            <div class="boxClose">
+                <img src="./img/x.png" alt="">
+            </div>
+            <div class="res_tic_btn"><a href>
+                    RESERVE TICKETS
+                </a></div>
+            <div class="shareBox">
+                <p>like and share</p>
+
+            </div>
+            <div class="shareBox">
+                <div class="shareIcon">
+                    <img src="./img/insta.png" alt="">
+                    <img src="./img/face.png" alt="">
+                    <img src="./img/twit.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./js/script.js"></script>
     <script src="./js/reserv_tic.js"></script>
 </body>

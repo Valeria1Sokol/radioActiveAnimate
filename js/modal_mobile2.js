@@ -71,7 +71,7 @@ btn22.onclick = function () {
         display: 'none'
     });
     $('.modalImg').css({
-        backgroundImage: 'url(./img/behind_img_bottom1.png)',
+        backgroundImage: 'url(./img/the_seed.png)',
         height: '50vw'
     });
       $('.closeBtn').css({
@@ -102,7 +102,7 @@ btn33.onclick = function () {
         display: 'flex'
     });
     $('.modalImg').css({
-        backgroundImage: 'url(./img/behind_img_bottom2.png)',
+        backgroundImage: 'url(./img/power.png)',
         height: '59vw'
     });
       $('.closeBtn').css({
