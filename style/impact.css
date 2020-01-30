@@ -482,6 +482,14 @@ section {
     .contant_text {
         margin: 1vw 0 1.5vw;
     }
+
+    .main .main_box {
+        margin-top: 1vw;
+    }
+
+    .dots_box .dots_text {
+        margin: 0 0 -0.7vw;
+    }
 }
 
 @media all and (max-width:1024px) {
