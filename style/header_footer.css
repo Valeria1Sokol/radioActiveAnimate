@@ -1148,10 +1148,7 @@ footer .footerIcon_loc {
 }
 
 @media all and (max-width:425px) {
-    header {
-        height: 12vw;
-    }
-
+   
     .header_center .header_text {
         font-size: 2vw;
     }
@@ -1288,7 +1285,7 @@ footer .footerIcon_loc {
         width: 7vw;
     }
     footer {
-    padding: 0 5.1vw 4vw;
+    padding: 0 5.1vw 6.3vw;
 }
 
 }

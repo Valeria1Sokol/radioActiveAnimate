@@ -500,10 +500,11 @@ section {
     .main {
         background-size: 98%;
     }
+
     .main_box .video {
-    width: 40.7vw;
-    height: 23vw;
-}
+        width: 40.7vw;
+        height: 23vw;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -961,5 +962,14 @@ section {
 
     #dot3 {
         margin-top: 3vw;
+    }
+
+    .main_Behind {
+        padding: 0vw 12vw 0;
+    }
+
+    .dot {
+        width: 6vw;
+        height: 6vw;
     }
 }

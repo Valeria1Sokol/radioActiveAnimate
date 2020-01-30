@@ -940,4 +940,11 @@ section {
     .closeBtn img {
         width: 4vw;
     }
+    .main_Behind {
+    padding: 0vw 12vw 0;
+}
+    .dot {
+    width: 6vw;
+    height: 6vw;
+}
 }
