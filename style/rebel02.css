@@ -13,7 +13,42 @@ header {
     background-position: bottom;
 
 }
-
+.dot {
+    width: 4.5vw;
+    height: 4.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1vw 0 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+}
+.dot img
+{
+    position: absolute;
+    max-width: 100%;
+    margin: 0!important;
+}
+.circle1
+{
+     animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+.circle2
+{
+     animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
 .mobile_r {
     display: none !important;
 }

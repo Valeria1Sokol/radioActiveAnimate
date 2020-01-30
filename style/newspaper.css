@@ -10,8 +10,42 @@ header {
 footer {
     z-index: 2;
 }
-
-
+.dot {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1vw 0 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+}
+.dot img
+{
+    position: absolute;
+    max-width: 100%;
+    margin: 0!important;
+}
+.circle1
+{
+     animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+.circle2
+{
+     animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
 .intro {
     max-height: 100vh;
     overflow: hidden;
@@ -126,6 +160,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0 0 3vw;
 }
 
 .main .posterC {
@@ -139,7 +174,7 @@ footer {
 }
 
 .main .posterR {
-    padding: 0 0 4vw 0;
+    padding: 0 0 6vw 0;
     background-image: url(../img/poster2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,6 +589,20 @@ fa-chevron-up {
 
     .container {
         background-image: url(../img/newspaper-sceneBg.png);
+    }
+    .main .poster
+    {
+        background-image: none;
+        width: 20vw;
+    height: 28vw;
+    }
+    .main .posterC {
+    width: 16.6vw;
+    height: 27vw;
+}
+    .main .posterL{
+        width: 20.6vw;
+    height: 27vw;
     }
 }
 
