@@ -10,6 +10,7 @@ header {
 footer {
     z-index: 2;
 }
+
 .dot {
     width: 3vw;
     height: 3vw;
@@ -24,28 +25,29 @@ footer {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
-.dot img
-{
+
+.dot img {
     position: absolute;
     max-width: 100%;
-    margin: 0!important;
+    margin: 0 !important;
 }
-.circle1
-{
-     animation: pulse1 ease-in-out 5.5s infinite;
+
+.circle1 {
+    animation: pulse1 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
 }
-.circle2
-{
-     animation: pulse3 ease-in-out 5.5s infinite;
+
+.circle2 {
+    animation: pulse3 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
 }
+
 .intro {
     max-height: 100vh;
     overflow: hidden;
@@ -548,7 +550,7 @@ fa-chevron-up {
 
 
 @media all and (max-width:1440px) {
-  
+
 
     .modalImg {
         width: 24vw;
@@ -565,7 +567,7 @@ fa-chevron-up {
 }
 
 @media all and (max-width:1024px) {
-  
+
 
     .modalWripperImg {
         height: 65%;
@@ -590,19 +592,21 @@ fa-chevron-up {
     .container {
         background-image: url(../img/newspaper-sceneBg.png);
     }
-    .main .poster
-    {
+
+    .main .poster {
         background-image: none;
         width: 20vw;
-    height: 28vw;
+        height: 28vw;
     }
+
     .main .posterC {
-    width: 16.6vw;
-    height: 27vw;
-}
-    .main .posterL{
+        width: 16.6vw;
+        height: 27vw;
+    }
+
+    .main .posterL {
         width: 20.6vw;
-    height: 27vw;
+        height: 27vw;
     }
 }
 
@@ -658,7 +662,7 @@ fa-chevron-up {
     }
 
     .carousel-item {
-        width: 56.8vw!important;
+        width: 56.8vw !important;
     }
 
     .carousel .indicators .indicator-item {
@@ -915,10 +919,14 @@ fa-chevron-up {
     .btnSience {
         width: 80%;
     }
+
     .modalInfo {
-    height: 54%;
-    width: 100%;
-    padding: 0 0 13vw;
-    border-radius: 4.2vw;
+        height: 54%;
+        width: 100%;
+        padding: 0 0 13vw;
+        border-radius: 4.2vw;
+    }
+    .carousel {
+    margin-top: 0vw;
 }
 }

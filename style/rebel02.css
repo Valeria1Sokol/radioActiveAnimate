@@ -13,6 +13,7 @@ header {
     background-position: bottom;
 
 }
+
 .dot {
     width: 4.5vw;
     height: 4.5vw;
@@ -27,28 +28,29 @@ header {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
-.dot img
-{
+
+.dot img {
     position: absolute;
     max-width: 100%;
-    margin: 0!important;
+    margin: 0 !important;
 }
-.circle1
-{
-     animation: pulse1 ease-in-out 5.5s infinite;
+
+.circle1 {
+    animation: pulse1 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
 }
-.circle2
-{
-     animation: pulse3 ease-in-out 5.5s infinite;
+
+.circle2 {
+    animation: pulse3 ease-in-out 5.5s infinite;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out
 }
+
 .mobile_r {
     display: none !important;
 }
@@ -551,7 +553,7 @@ header {
 
 @media all and (max-width:425px) {
     .main2 {
-        padding: 7vh 0 2vh;
+        padding: 7vh 0 4vh;
     }
 
     .shadowGreen2 {
@@ -559,9 +561,11 @@ header {
     }
 
     .main2 .main_h1 {
-        padding: 0 12.7vw;
+        text-align: center;
+        padding: 0;
         line-height: 1.5;
-        font-size: 6.7vw !important;
+        font-size: 6vw !important;
+
     }
 
     .marie_pierre_box .touch {
@@ -586,5 +590,26 @@ header {
         position: absolute;
         left: 55%;
     }
+
+    .main2 .info .about_box {
+        padding: 4.1vw 6.3vw;
+        border-radius: 16.5vw;
+        z-index: 3;
+        width: 90%
+    }
+
+    .main2 .info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dot {
+        width: 9vw;
+        height: 9vw;
+    }
+    .marie_pierre_box .marie {
+    padding: 0vw 0 17vw 9vw;
+}
+
 
 }

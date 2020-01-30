@@ -935,7 +935,7 @@ section {
 
 @media all and (max-width:425px) {
     .dots_box {
-        margin: 16vw 0;
+        margin: 5vw 0;
     }
 
     .header_btn_box_m {

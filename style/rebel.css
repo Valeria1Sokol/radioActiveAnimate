@@ -161,7 +161,7 @@ footer {
 
 .main .video .close {
     position: absolute;
-   left: 95%;
+    left: 95%;
     top: 4%;
     cursor: pointer;
 }
@@ -466,23 +466,34 @@ section > span {
 
     .main .main_h1,
     .main2 .main_h1 {
-        padding: 0 9.7vw;
+        padding: 0;
         line-height: 1.5;
-        font-size: 6.7vw;
+        font-size: 6vw;
+        width: 68%;
     }
 
-    .main .video {
-        height: 41vw;
-    }
 
     .main .btn_more p {
-        font-size: 3vw;
-        padding: 2.5vw 8.8vw;
+        font-size: 2.8vw;
+        padding: 2vw 7vw;
         border-radius: 9vw;
-        margin: 9vw 0 0;
+        margin: 0;
     }
 
     .main .main_box {
-        margin-top: 16.5vw;
+        margin-top: 0;
+    }
+
+    .main {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+
+    .main .main_box .video {
+        width: 83vw;
+        height: 47vw;
+        margin: 8vw 0;
     }
 }

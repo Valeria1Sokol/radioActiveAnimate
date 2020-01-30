@@ -522,10 +522,6 @@ section {
         line-height: 2;
     }
 
-    footer {
-        top: 88%;
-    }
-
     .main .video .close {
         left: 52.5vw;
     }
@@ -540,15 +536,7 @@ section {
         background-position: center;
     }
 
-    header,
-    footer {
-        position: relative;
-    }
-
-    footer {
-        top: 0;
-    }
-
+  
     .main_Behind {
         width: 100%;
         display: flex;
@@ -942,7 +930,7 @@ section {
 
 @media all and (max-width:425px) {
     .dots_box {
-        margin: 16vw 0;
+       margin: 5vw 0;
     }
 
     .header_btn_box_m {
