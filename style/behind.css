@@ -408,7 +408,7 @@ section {
 
 .contant_box_bottom .contant_text {
 
-    margin: 1vw 0 0;
+    margin: 1vw 0 1vw;
 }
 
 .contant_box_top .contant_text {
@@ -481,12 +481,16 @@ section {
     .contant_box_bottom {
         margin: 2vw 0vw 1vw 9vw;
     }
+
+    .dots {
+        height: 26.6vw;
+    }
 }
 
 @media all and (max-width:1280px) {
     .dots {
-        height: 28.5vw;
-        padding: 2.5vw 0 5.7vw;
+        height: 21.5vw;
+        padding: 1.5vw 0 2.7vw;
     }
 
     #dot2d {
@@ -505,6 +509,11 @@ section {
         width: 40.7vw;
         height: 23vw;
     }
+
+    .dots_box .dots_text {
+        padding: 1.4vw 0 3.4vw;
+    }
+
 }
 
 @media all and (max-width:1024px) {
