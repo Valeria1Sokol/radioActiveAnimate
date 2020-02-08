@@ -13,32 +13,31 @@
     transition: all 1s ease-in-out;
     animation: pulse2 ease-in-out 1.5s infinite;
 }
+
 @keyframes pulse1 {
-    0%
-    {
+    0% {
         transform: rotate(0deg);
     }
-     50%
-    {
+
+    50% {
         transform: rotate(360deg);
     }
-     100%
-    {
+
+    100% {
         transform: rotate(0deg);
     }
 }
 
 @keyframes pulse3 {
-    0%
-    {
+    0% {
         transform: rotate(0deg);
     }
-     50%
-    {
+
+    50% {
         transform: rotate(-360deg);
     }
-     100%
-    {
+
+    100% {
         transform: rotate(0deg);
     }
 }
@@ -74,15 +73,15 @@
     }
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:1024px) {
 
     .fade1 {
         animation: fadeIn ease-in-out .6s forwards;
     }
 }
-@keyframes scaleSound
-{
-     from {
+
+@keyframes scaleSound {
+    from {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
@@ -97,6 +96,4 @@
         transform: scale3d(1, 1, 1);
     }
 }
-
-
 

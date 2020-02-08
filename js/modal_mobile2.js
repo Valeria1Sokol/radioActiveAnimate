@@ -71,14 +71,7 @@ btn22.onclick = function () {
         display: 'none'
     });
     $('.modalImg').css({
-        backgroundImage: 'url(./img/the_seed.png)',
-        height: '50vw'
-    });
-      $('.closeBtn').css({
-        top: '19vw'
-    })
-    $('.modal').css({
-        padding: '14% 9vw'
+        backgroundImage: 'url(./img/the_seed.png)'
     });
       $('.main_box').removeClass('fade1');
          $('.pay').removeClass('fade1');
@@ -102,14 +95,7 @@ btn33.onclick = function () {
         display: 'flex'
     });
     $('.modalImg').css({
-        backgroundImage: 'url(./img/power.png)',
-        height: '59vw'
-    });
-      $('.closeBtn').css({
-        top: '19vw'
-    })
-    $('.modal').css({
-        padding: '14% 9vw'
+        backgroundImage: 'url(./img/power.png)'
     });
     $('.main_box').removeClass('fade1');
          $('.pay').removeClass('fade1');

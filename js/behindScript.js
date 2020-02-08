@@ -1,4 +1,5 @@
-    $('#dot0d').click(function () {
+if (window.innerWidth >= '1025') {
+$('#dot0d').click(function () {
         $('.intro1').animate({
             opacity: 1
         }, 500);
@@ -135,3 +136,4 @@
         $('.contant_box3').removeClass('fade1');
         $('.contant_box4').addClass('fade1');
     })
+}

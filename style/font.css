@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'AvenirM';
+    src: url("../font/Avenir-LT-65-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'AvenirL';
+    src: url("../font/AvenirLTStd-Light_2.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'SackersM';
+    src: url("../SackersGothicStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'RobotoR';
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Storyteller';
+    src: url("../font/Storyteller.otf") format("opentype");
+}

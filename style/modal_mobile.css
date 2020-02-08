@@ -19,7 +19,7 @@
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
 /*    transition: all 2s;*/
 }
@@ -31,7 +31,7 @@
     left: 0;
     width: 100%;
     min-height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 998;
     cursor: pointer;
 }
@@ -56,8 +56,10 @@
 }
 
 
-@media all and (max-width:768px) {
-    
+@media all and (max-width:1024px) {
+    .modalWindow {
+    padding: 11% 9vw 5%;
+}
  
 }
 

@@ -16,15 +16,27 @@ settings = {
 //    }
 //});
 $('.btbL').bind("click", function () {
-    $('.modalImg .img1').css({
-    display: 'flex'
-    });
-     $('.modalImg .img2').css({
-    display: 'none'
-    });
-     $('.modalImg .img3').css({
-    display: 'none'
-    });
+    if (window.innerWidth >= '769') {
+        $('.modalImg .img1').css({
+            display: 'flex'
+        });
+        $('.modalImg .img2').css({
+            display: 'none'
+        });
+        $('.modalImg .img3').css({
+            display: 'none'
+        });
+    } else {
+        $('.modalImg .img1').css({
+            display: 'none'
+        });
+        $('.modalImg .img2').css({
+            display: 'none'
+        });
+        $('.modalImg .img3').css({
+            display: 'none'
+        });
+    }
 
     $('.infoL').css({
         display: 'flex'
@@ -56,15 +68,27 @@ $('.btbL').bind("click", function () {
 });
 $('.btbC').bind("click", function () {
     if ($(this).attr(settings.objModalDataAttr)) {
-      $('.modalImg .img2').css({
-    display: 'flex'
-    });
-     $('.modalImg .img1').css({
-    display: 'none'
-    });
-     $('.modalImg .img3').css({
-    display: 'none'
-    });
+        if (window.innerWidth >= '769') {
+            $('.modalImg .img2').css({
+                display: 'flex'
+            });
+            $('.modalImg .img1').css({
+                display: 'none'
+            });
+            $('.modalImg .img3').css({
+                display: 'none'
+            });
+        } else {
+            $('.modalImg .img1').css({
+                display: 'none'
+            });
+            $('.modalImg .img2').css({
+                display: 'none'
+            });
+            $('.modalImg .img3').css({
+                display: 'none'
+            });
+        }
         $('.infoL').css({
             display: 'none'
         })
@@ -98,15 +122,27 @@ $('.btbC').bind("click", function () {
 });
 $('.btbR').bind("click", function () {
     if ($(this).attr(settings.objModalDataAttr)) {
-       $('.modalImg .img3').css({
-    display: 'flex'
-    });
-     $('.modalImg .img2').css({
-    display: 'none'
-    });
-     $('.modalImg .img1').css({
-    display: 'none'
-    });
+        if (window.innerWidth >= '769') {
+            $('.modalImg .img3').css({
+                display: 'flex'
+            });
+            $('.modalImg .img2').css({
+                display: 'none'
+            });
+            $('.modalImg .img1').css({
+                display: 'none'
+            });
+        } else {
+            $('.modalImg .img1').css({
+                display: 'none'
+            });
+            $('.modalImg .img2').css({
+                display: 'none'
+            });
+            $('.modalImg .img3').css({
+                display: 'none'
+            });
+        }
         $('.infoL').css({
             display: 'none'
         })
@@ -141,7 +177,3 @@ $('.btbR').bind("click", function () {
 $(settings.objModalCloseBtn).bind("click", function () {
     $(".modal").fadeOut();
 });
-
-
-
-

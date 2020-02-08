@@ -1,22 +1,3 @@
-@font-face {
-    font-family: 'SackersM';
-    src: url("../SackersGothicStd-Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Storyteller';
-    src: url("../font/Storyteller.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'AvenirM';
-    src: url("../font/Avenir-LT-65-Medium.ttf");
-}
-
-@font-face {
-    font-family: 'AvenirL';
-    src: url("../font/AvenirLTStd-Light_2.otf") format("opentype");
-}
 
 header {
     z-index: 3;
@@ -48,17 +29,14 @@ footer {
 .intro .video__media {
     width: 100%;
     height: auto;
-
     position: absolute;
     top: 0;
     left: 0;
 }
 
-
 .container {
     background-position: center;
     background-image: none;
-
 }
 
 .main {
@@ -183,7 +161,6 @@ footer {
     height: 100%;
     position: relative;
     left: 7.6vw;
-
 }
 
 .marie_pierre_box .marie {
@@ -198,8 +175,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-       padding: 0vw 0 6vw 9vw;
+    padding: 0vw 0 6vw 9vw;
     transition: all 1s;
+    cursor: pointer;
 }
 
 
@@ -218,6 +196,7 @@ footer {
     justify-content: center;
     padding: 6vw 5vw 0 0;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .info {
@@ -310,6 +289,7 @@ footer {
 
 .marie_pierre_box .touch {
     width: 4.5vw;
+    cursor: pointer;
 }
 
 
