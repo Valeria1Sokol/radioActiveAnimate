@@ -18,8 +18,16 @@
     <link rel="stylesheet" href="./style/reserv_tic.css">
     <link rel="stylesheet" href="./style/font.css">
 
+    <script src="./js/is.min.js"></script>
+    <script>
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        if (is.safari() || is.ie()) {
+            link.href = "./style/safari.css";
+        }
 
-
+        document.head.appendChild(link);
+    </script>
     <title>RadioActive Movie</title>
 </head>
 

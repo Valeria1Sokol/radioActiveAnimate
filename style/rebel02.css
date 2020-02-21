@@ -8,9 +8,14 @@ header {
     z-index: 4;
 }
 
-.container {
+.container,
+.container_character {
     background-image: url(../img/Rebel2_bg.png);
     background-position: bottom;
+}
+
+.container_character {
+    height: 100%;
 }
 
 .dot {
@@ -308,7 +313,7 @@ header {
     .about_p {
         color: white;
         text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'RobotoR', sans-serif;
         font-size: 2.5vw;
         font-weight: 300;
         letter-spacing: 0.5vw;
@@ -319,15 +324,43 @@ header {
 
 }
 
+@media all and (max-width:1024px) {
+    .about_Maria {
+        width: 73%;
+        height: 56px;
+        background-image: url(../img/MSC.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main2 .info {
+        height: 79%;
+    }
+}
+
 @media all and (max-width:768px) {
     .container {
-        background-image: url(../img/Rebel2_bg_m.png);
+        background-image: url(../img/RebelInHerElement_bg.png);
+        background-position: center;
     }
+
+    .container_character {
+        background-image: url(../img/characters.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
 
     footer {
         top: 0%;
         z-index: 3;
         position: relative;
+    }
+
+    .dot {
+        width: 6.5vw;
+        height: 6.5vw;
     }
 
     .main2 {
@@ -340,7 +373,7 @@ header {
     .main2 .main_h1 {
         padding: 0 22.7vw;
         line-height: 1.5;
-        font-size: 3.7vw !important;
+        font-size: 3.3vw !important;
         text-align: center;
         color: white;
         text-transform: uppercase;
@@ -365,10 +398,10 @@ header {
     .marie_pierre_box .marie {
         width: 50%;
         height: 67%;
-        padding: 0vw 0 24vw 9vw;
+        padding: 0vw 0 19vw 0vw;
         z-index: 2;
         left: 13%;
-        background-image: url(../img/marie1.png);
+        background-image: none;
     }
 
     .marie_pierre_box .pierre {
@@ -377,7 +410,7 @@ header {
         padding: 0 6vw 12vw 0vw;
         z-index: 2;
         transition: all .3s;
-        background-image: url(../img/pierre1.png);
+        background-image: none;
 
     }
 
@@ -389,7 +422,6 @@ header {
         font-size: 2vw;
         font-weight: 400;
     }
-
 
     .main2 .info {
         height: fit-content;
@@ -439,7 +471,7 @@ header {
         width: 50%;
         border-radius: 6.5vw;
         z-index: 0;
-        bottom: 11%;
+        bottom: 8%;
         position: absolute;
         left: 50%;
         flex-direction: column;
@@ -454,7 +486,7 @@ header {
         width: 50%;
         border-radius: 6.5vw;
         z-index: 0;
-        bottom: 9%;
+        bottom: 8%;
         position: absolute;
         left: 8%;
         flex-direction: column;
@@ -468,7 +500,7 @@ header {
     .about_p {
         color: white;
         text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'RobotoR', sans-serif;
         font-size: 2.5vw;
         font-weight: 300;
         letter-spacing: 0.5vw;
@@ -484,18 +516,26 @@ header {
     }
 
     .about_tittle {
-        font-size: 1.9vw;
+        font-size: 1.5vw;
         font-weight: 500;
         letter-spacing: 0.6vw;
+        margin: 0;
+    }
 
+    .about_Pierre {
+        margin: 0 0 2vw;
     }
 
     .about_p2 {
-        font-size: 1.9vw;
+        font-size: 1.5vw;
         font-weight: 100;
         letter-spacing: 0.5vw;
         line-height: 1.5;
-        margin: 2vw 0 5vw;
+        margin: 1vw 0 5vw;
+    }
+
+    .about_box_m .about_Maria {
+        height: 7vw;
     }
 
     .header_btn {
@@ -539,11 +579,19 @@ header {
         height: 2.5vw;
     }
 
+    .main2 {
+        height: 88%;
+    }
 }
 
 @media all and (max-width:425px) {
+
     .main2 {
         padding: 7vh 0 4vh;
+    }
+
+    .main2 {
+        height: 85%;
     }
 
     .shadowGreen2 {
@@ -599,5 +647,11 @@ header {
 
     .marie_pierre_box .marie {
         padding: 0vw 0 17vw 9vw;
+    }
+}
+
+@media all and (max-width:375px) {
+    .main2 {
+        height: 86%;
     }
 }

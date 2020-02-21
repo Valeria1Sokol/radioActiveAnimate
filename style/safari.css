@@ -1,7 +1,16 @@
-@media all and (max-width:425px) {
+@media all and (max-width:768px) {
 
-    .modalImg {
-        width: 110px;
+    .dots {
+        padding: 14vw 0 9vw;
+        height: 82%;
     }
 
+}
+@media all and (max-width:425px)
+{
+    .dots
+    {
+        bottom: 0;
+        padding: 22vw 0 9vw;
+    }
 }

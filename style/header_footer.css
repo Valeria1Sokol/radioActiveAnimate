@@ -109,7 +109,6 @@ a:link {
     transition: all 0.4s ease 0s;
 }
 
-
 p {
     margin: 0;
 }
@@ -476,12 +475,11 @@ nav {
     border-radius: 25px;
     padding: 0.73vw 9.4vw;
     margin: 0 0.8vw 0 0;
-    font-family: 'Avenir';
+    font-family: 'AvenirM';
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
-
 }
 
 .header_container {
@@ -913,7 +911,6 @@ footer .footerIcon_Home {
         margin-top: 4.3vw;
         user-select: none;
     }
-
 
     #menuToggle .menuCheck {
         display: block;

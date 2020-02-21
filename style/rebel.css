@@ -1,4 +1,3 @@
-
 header {
     z-index: 3;
 }
@@ -6,7 +5,6 @@ header {
 footer {
     z-index: 2;
 }
-
 
 .intro {
     max-height: 100vh;
@@ -252,7 +250,7 @@ footer {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
     line-height: 2;
     margin: 1vw 0;
 }
@@ -272,7 +270,7 @@ footer {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
     line-height: 2;
     margin: 2vw 0 0;
 }
@@ -299,7 +297,7 @@ footer {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
     line-height: 1.5;
     margin: 0 0 2.5vw;
 }
@@ -315,7 +313,6 @@ footer {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
-    /*    z-index: 2;*/
     position: relative;
     text-decoration: none;
 }
@@ -385,7 +382,7 @@ section > span {
     .main .main_h1 {
         padding: 0 22.7vw;
         line-height: 1.5;
-        font-size: 3.7vw;
+        font-size: 3.3vw;
         text-align: center;
         color: white;
         text-transform: uppercase;
@@ -443,7 +440,6 @@ section > span {
         height: 34vw;
     }
 
-
 }
 
 
@@ -456,7 +452,6 @@ section > span {
         font-size: 6vw;
         width: 68%;
     }
-
 
     .main .btn_more p {
         font-size: 2.8vw;

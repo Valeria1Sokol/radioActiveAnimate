@@ -68,7 +68,6 @@
 .video__media {
     width: 100%;
     height: auto;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -323,7 +322,7 @@ section {
 
 .contant_text span {
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
 }
 
 .contant_h {
@@ -341,7 +340,7 @@ section {
     line-height: 1.6;
     margin: 1vw 0;
     font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
 }
 
 .contant_box .behind_icon {
@@ -358,7 +357,7 @@ section {
     background-color: transparent;
     border-radius: 1.3vw;
     padding: 0.73vw 1.8vw;
-    font-family: 'Avenir';
+    font-family: 'AvenirM';
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
@@ -631,7 +630,7 @@ section {
         line-height: 1.6;
         margin: 1vw 0 1.5vw;
         font-weight: 100;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'RobotoR', sans-serif;
     }
 
     .closeBtn {
@@ -691,9 +690,9 @@ section {
     }
 
     .beh_tittle .main_h1 {
-        font-size: 3.7vw;
+        font-size: 3.3vw;
         letter-spacing: 0.5vw;
-        margin: 0 0 3vw;
+        margin: 0 0 1.5vw;
     }
 
     .beh_tittle .main_tittle {
@@ -721,7 +720,7 @@ section {
     }
 
     .dots {
-        padding: 10.5vw 0;
+        padding: 10vw 0 10.5vw;
     }
 
     .dots_box .dots_text {
@@ -772,7 +771,6 @@ section {
     .main_box {
         border-radius: 7vw;
         width: 100%;
-
         position: relative;
         margin: 0;
         display: none;

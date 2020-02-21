@@ -19,7 +19,6 @@
     z-index: 5;
 }
 
-
 .intro {
     max-height: 100vh;
     overflow: hidden;
@@ -57,7 +56,6 @@
 .video__media {
     width: 100%;
     height: auto;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +105,6 @@ footer {
     line-height: 2;
     font-size: 1.5vw;
     text-align: justify;
-
 }
 
 .main_box {
@@ -322,7 +319,7 @@ section {
 
 .contant_text span {
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
 }
 
 .contant_h {
@@ -343,7 +340,7 @@ section {
     line-height: 1.6;
     margin: 1vw 0;
     font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'RobotoR', sans-serif;
 }
 
 .contant_box .behind_icon {
@@ -360,7 +357,7 @@ section {
     background-color: transparent;
     border-radius: 1.3vw;
     padding: 0.73vw 1.8vw;
-    font-family: 'Avenir';
+    font-family: 'AvenirM';
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
@@ -422,11 +419,9 @@ section {
         height: 23vw;
     }
 
-
     .main .main_box {
         margin-top: 1vw;
     }
-
 }
 
 @media all and (max-width:1024px) {
@@ -455,7 +450,7 @@ section {
         align-items: center;
         z-index: 100;
         height: 89%;
-        bottom: 0%;
+        bottom: 2.2%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -599,7 +594,7 @@ section {
         line-height: 1.6;
         margin: 1vw 0 1.5vw;
         font-weight: 100;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'RobotoR', sans-serif;
     }
 
     .closeBtn {
@@ -634,7 +629,6 @@ section {
     .main_box {
         border-radius: 7vw;
         width: 100%;
-
         position: relative;
         margin: 0;
         display: none;
@@ -671,16 +665,15 @@ section {
     }
 
     .main_Behind .main_h1 {
-        padding: 0 15.7vw;
         line-height: 1.5;
-        font-size: 3.7vw;
+        font-size: 3.3vw;
         text-align: center;
         color: white;
         text-transform: uppercase;
         font-family: 'SackersM';
         letter-spacing: 0.5vw;
         line-height: 1.5;
-        margin: 0 0 3vw;
+        margin: 0 0 1.5vw;
     }
 
     .main_Behind .main_tittle {
@@ -708,14 +701,14 @@ section {
     }
 
     .dots {
-        padding: 10.5vw 0;
+        padding: 14vw 0 10vw;
         height: 84%;
     }
 
     .dots_box .dots_text {
         width: 53%;
         font-size: 2.3vw;
-        padding: 6vw 0 13.5vw;
+        padding: 6vw 0 15.5vw;
     }
 
     .modalWindow {
@@ -780,7 +773,6 @@ section {
         letter-spacing: 0.5vw;
     }
 
-
     .video {
         width: 100%;
         height: 52vw;
@@ -802,6 +794,7 @@ section {
     }
 
     .dots {
-        padding: 13.5vw 0 10.5vw;
+        padding: 20.5vw 0 10.5vw;
+        bottom: 0;
     }
 }
