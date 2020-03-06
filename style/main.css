@@ -27,6 +27,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 
 .main {
@@ -178,6 +179,7 @@ footer {
     animation: disapire ease-in-out 2.5s;
     animation-fill-mode: both;
     animation-delay: 14s;
+    overflow: hidden;
 }
 
 
@@ -189,6 +191,7 @@ footer {
     left: 0;
     z-index: 2;
     animation: shadow ease-in-out 4s;
+    overflow: hidden;
 }
 
 .marieShadowGreen {
@@ -203,6 +206,7 @@ footer {
     z-index: 2;
     animation: shadowGreen ease-in-out 4s;
     animation-fill-mode: both;
+    overflow: hidden;
 }
 
 .marieHand {
@@ -219,6 +223,7 @@ footer {
     animation: scaleHand ease-in-out 14s;
     animation-fill-mode: both;
     animation-delay: 1s;
+    overflow: hidden;
 }
 
 .animateText {
@@ -271,6 +276,7 @@ footer {
     z-index: 2;
     animation: shadow1 12s ease-in-out 5s;
     animation-fill-mode: both;
+    overflow: hidden;
 }
 
 .dot {
