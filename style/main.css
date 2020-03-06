@@ -1,0 +1,397 @@
+header,
+footer {
+    animation: tittleAnim ease-in-out 4s;
+    animation-fill-mode: both;
+    animation-delay: 6s;
+    z-index: 4;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/home-page_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doubleBG {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/home-page_bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.anonsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+}
+
+.anonsText .tittle {
+    font-size: 0.6vw;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 5px;
+    font-family: 'SackersM';
+    text-transform: uppercase;
+    animation: tittleAnim ease-in-out 5s;
+    animation-fill-mode: both;
+    animation-delay: 1.7s;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.anonsText .actress {
+    font-size: 1.3vw;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 5px;
+    font-family: 'SackersM';
+    text-transform: uppercase;
+    margin: 1vw 0 0;
+    animation: tittleAnim ease-in-out 5s;
+    animation-fill-mode: both;
+    animation-delay: 1.7s;
+}
+
+.anonsText .actress span {
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 5px;
+    font-family: 'SackersM';
+    text-transform: uppercase;
+}
+
+.anonsText .name {
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.3vw;
+    font-family: 'Avenir';
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    animation: textAnim ease-in-out 5s;
+    animation-fill-mode: both;
+    animation-delay: 1.2s;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 3vw;
+    opacity: 0.8;
+}
+
+.box1 {
+    background-image: url(../img/slide3.png);
+}
+
+.box2 {
+    background-image: url(../img/slide1.png);
+}
+
+.box3 {
+    background-image: url(../img/slide2.png);
+}
+
+.box4 {
+    background-image: url(../img/slide4.png);
+}
+
+.main .carousel {
+    animation: tittleAnim ease-in-out 4s;
+    animation-fill-mode: both;
+    animation-delay: 6s;
+}
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 33vw;
+    height: 30vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5vw;
+}
+
+.carousel {
+    height: 30vw;
+    width: 100%;
+    transition: all 2s ease;
+}
+
+.carousel .carousel-item p {
+    font-size: 0.9vw;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.carousel .carousel-item .h2 {
+    color: white;
+    font-size: 1.3vw;
+    letter-spacing: 0.46vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+.marie {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/marie_main2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: disapire ease-in-out 2.5s;
+    animation-fill-mode: both;
+    animation-delay: 14s;
+}
+
+
+.marieShadow {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: shadow ease-in-out 4s;
+}
+
+.marieShadowGreen {
+    width: 12vw;
+    height: 12vh;
+    background-image: url(../img/greenLight_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 49.5%;
+    top: 29%;
+    z-index: 2;
+    animation: shadowGreen ease-in-out 4s;
+    animation-fill-mode: both;
+}
+
+.marieHand {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/hand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    animation: scaleHand ease-in-out 14s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.animateText {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0 0;
+    position: relative;
+    z-index: 3;
+}
+
+.animateText .name {
+    font-size: 2.3vw;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.3vw;
+    font-family: 'SackersM';
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 1vw 0 0;
+    animation: textAnim ease-in-out 1.4s;
+    animation-fill-mode: both;
+}
+
+.animateText .name:last-of-type {
+    margin: 0;
+}
+
+.animateText .n1 {
+    opacity: 0;
+    animation-delay: 4.5s;
+}
+
+.animateText .n2 {
+    opacity: 0;
+    animation-delay: 5.1s;
+}
+
+.animateText .n3 {
+    opacity: 0;
+    animation-delay: 5.7s;
+}
+
+.mainShadow {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    animation: shadow1 12s ease-in-out 5s;
+    animation-fill-mode: both;
+}
+
+.dot {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1vw 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.dot img {
+    position: absolute;
+    max-width: 100%;
+    margin: 0 !important;
+}
+
+.circle1 {
+    animation: pulse1 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+
+.circle2 {
+    animation: pulse3 ease-in-out 5.5s infinite;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out
+}
+
+@media all and (max-width:1440px) {
+
+    .carousel .carousel-item {
+        width: 31vw;
+        height: 27vw;
+            padding: 0 0 2vw;
+    }
+
+    .carousel {
+        height: 28vw;
+    }
+}
+
+@media all and (max-width:1024px) {
+
+    .container,
+    .marie {
+        background-position: center;
+    }
+
+    .carousel .carousel-item {
+        width: 39vw;
+        height: 37vw;
+    }
+
+    .carousel {
+        height: 37vw;
+    }
+}
+
+@media all and (max-width:768px) {
+    .carousel .carousel-item {
+        width: 50vw;
+        height: 44vw;
+    }
+
+    .carousel {
+        height: 44vw;
+    }
+
+    .main {
+        padding: 2.5vw 0;
+    }
+
+    .animateText .name {
+        font-size: 3.3vw;
+    }
+
+    .anonsText .name {
+        font-size: 10vw;
+    }
+
+    .anonsText .actress {
+        font-size: 2vw;
+        letter-spacing: 0.3vw;
+        margin: 2vw 0;
+    }
+
+    .anonsText .actress span {
+        font-size: 1.5vw;
+        letter-spacing: 0.3vw;
+    }
+
+    .anonsText .tittle {
+        font-size: 1.5vw;
+        letter-spacing: 0.3vw;
+    }
+
+    .carousel .carousel-item .h2 {
+        color: white;
+        font-size: 2.7vw;
+    }
+
+    .dot {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .carousel .carousel-item p {
+        font-size: 2.2vw;
+    }
+    .marieHand
+    {
+       
+    }
+}
