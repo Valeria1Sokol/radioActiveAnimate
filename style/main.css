@@ -15,7 +15,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
+
 .doubleBG {
     width: 100vw;
     height: 100vh;
@@ -209,7 +211,7 @@ footer {
     background-image: url(../img/hand.png);
     background-repeat: no-repeat;
     background-size: cover;
-     background-position: center top;
+    background-position: center top;
     position: absolute;
     top: 0;
     left: 0;
@@ -314,7 +316,7 @@ footer {
     .carousel .carousel-item {
         width: 31vw;
         height: 27vw;
-            padding: 0 0 2vw;
+        padding: 0 0 2vw;
     }
 
     .carousel {
@@ -390,8 +392,13 @@ footer {
     .carousel .carousel-item p {
         font-size: 2.2vw;
     }
-    .marieHand
-    {
-       
+
+}
+
+@media all and (max-width:425px) {
+
+    footer {
+
+        z-index: 5;
     }
 }
